@@ -26,20 +26,18 @@ export default defineConfig({
       },
       head: [
         {
-          // 根据浏览器语言自动跳转到对应语言版本；无匹配则保持英文。
-          // 仅在站点根路径 `/` 生效，且只执行一次（用户手动切换后不再打扰）。
+          // 客户端兜底：浏览器语言自动跳转（服务端中间件为首选方案）
           tag: "script",
           content: `(function () {
   try {
     if (location.pathname !== '/') return;
-    if (localStorage.getItem('starlight-lang-detected')) return;
-    localStorage.setItem('starlight-lang-detected', '1');
+    if (localStorage.getItem('lang-detected')) return;
+    localStorage.setItem('lang-detected', '1');
     var langs = navigator.languages && navigator.languages.length
       ? navigator.languages
       : [navigator.language || ''];
     for (var i = 0; i < langs.length; i++) {
       var l = (langs[i] || '').toLowerCase();
-      // 简体中文相关区域 -> /zh-cn/（繁体 zh-hant/zh-tw 等无对应语言，回退英文）
       if (l === 'zh' || l === 'zh-cn' || l === 'zh-hans' || l === 'zh-sg' || l === 'zh-my') {
         location.replace('/zh-cn/');
         return;
