@@ -19,3 +19,9 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+.wrangler

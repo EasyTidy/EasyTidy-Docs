@@ -1,0 +1,76 @@
+---
+title: 下载 EasyTidy Pro
+description: 获取最新版本的 EasyTidy Pro 客户端
+---
+
+import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
+
+请选择最适合你当前系统的版本进行下载。如需了解各版本的详细安装步骤与环境配置，请参阅我们的 [📘 完整安装指南](/zh-cn/install/)。
+
+## 📥 稳定版下载
+
+<CardGrid>
+  <Card title="包含运行时版" icon="add-document">
+    **推荐**绝大多数普通 Windows 用户使用。
+
+    * 内置全部运行环境组件，安装后 100% 无痛运行。
+
+    <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/EasyTidyPro_win-x64_SelfContained_Setup.exe" variant="primary" icon="download">下载 .exe 安装包</LinkButton>
+  </Card>
+
+  <Card title="不含运行时版" icon="rocket">
+    **适合**开发者、系统极客，或已自行安装 `.NET` 运行时的用户。
+
+    * 移除冗余环境组件，体积小巧，下载和部署更迅速。
+
+    <LinkButton href="https://download.easytidy.net/stable/EasyTidyPro_win-x64_Setup.exe" variant="secondary" icon="external">官网高速下载</LinkButton>
+    <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/EasyTidyPro_win-x64_Setup.exe" variant="secondary" icon="github">GitHub 下载</LinkButton>
+  </Card>
+
+  <Card title="压缩包版" icon="open-book">
+    **适合**追求「即用即走」、不写入系统快捷方式，或需要放入 U 盘随身携带的用户。
+
+    * 免安装，解压即可运行。*(关于路径权限限制，请查阅安装指南)*
+
+    <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/EasyTidyPro_win-x64_Portable.zip" variant="secondary" icon="download">下载 .zip 压缩包</LinkButton>
+  </Card>
+</CardGrid>
+
+<div style="text-align: center; margin-top: 1rem;">
+  <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases" variant="minimal" icon="open-book">查看所有历史版本 →</LinkButton>
+</div>
+
+---
+
+## 📂 网盘分流下载
+
+如果你完全无法打开 GitHub，也可以通过以下不限速网盘获取官方同步更新的全部安装包：
+
+* **📁 蓝奏云下载站**：[🚀 点击前往分流下载](#) *(国内免登录，全速下载)*
+* **☁️ 123盘**：[🔗 点击前往分流下载](#)
+
+---
+
+:::note[💡 针对国内网络环境的下载小建议]
+由于本项目的核心托管于 GitHub，国内部分地区的网络在访问 GitHub Release 时可能会遇到下载缓慢或中断的情况。
+
+**你可以尝试以下方式解决：**
+1. **优先使用官网源与网盘**：轻量版用户推荐使用 **官网高速下载**；需要其他版本推荐使用 **网盘分流**，体验最稳定。
+2. **使用 GitHub 镜像/加速工具**：如果你更倾向于从官方渠道获取，你可以**复制官方的 GitHub 下载链接**，并自行使用各类 **GitHub 代理加速站、镜像站（如 Watt Toolkit 等工具）** 进行分流下载。
+:::
+
+## 🔒 文件安全验证
+
+为确认下载的文件完整且未被篡改，可下载校验文件并计算 SHA-256 哈希值：
+
+- [checksums.txt](https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/checksums.txt)
+
+使用以下命令验证：
+
+```powershell
+Get-FileHash EasyTidyPro_WithRuntime_Setup.exe -Algorithm SHA256
+```
+
+:::tip[关于安全软件误报]
+作为独立开发的效率工具，部分版本在下载或首次运行时可能会触发 Windows Defender 的「未知发布者」警告。请放心，EasyTidy Pro **纯净无毒，绝不上传任何用户隐私**。点击「仍要运行」即可安全使用。
+:::

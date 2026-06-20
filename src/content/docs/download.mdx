@@ -1,0 +1,76 @@
+---
+title: Download EasyTidy Pro
+description: Get the latest version of EasyTidy Pro client
+---
+
+import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
+
+Choose the version that best fits your system. For detailed installation steps and environment configuration, see our [📘 Complete Installation Guide](/install/).
+
+## 📥 Stable Release
+
+<CardGrid>
+  <Card title="With Runtime" icon="add-document">
+    **Recommended** for most everyday Windows users.
+
+    * Bundles all runtime dependencies — download, install, and run with zero extra steps.
+
+    <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/EasyTidyPro_win-x64_SelfContained_Setup.exe" variant="primary" icon="download">Download .exe Installer</LinkButton>
+  </Card>
+
+  <Card title="Without Runtime" icon="rocket">
+    **Ideal** for developers, power users, or those who already have `.NET` Runtime installed.
+
+    * A lightweight, minimal download — smaller and faster to deploy.
+
+    <LinkButton href="https://download.easytidy.net/stable/EasyTidyPro_win-x64_Setup.exe" variant="secondary" icon="external">Official Download</LinkButton>
+    <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/EasyTidyPro_win-x64_Setup.exe" variant="secondary" icon="github">GitHub Download</LinkButton>
+  </Card>
+
+  <Card title="Portable Archive" icon="open-book">
+    **Perfect** for those who want a "grab and go" green tool — no shortcuts, no system writes, USB-friendly.
+
+    * Just unzip and run. *(Check the installation guide for path restrictions.)*
+
+    <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/EasyTidyPro_win-x64_Portable.zip" variant="secondary" icon="download">Download .zip Archive</LinkButton>
+  </Card>
+</CardGrid>
+
+<div style="text-align: center; margin-top: 1rem;">
+  <LinkButton href="https://github.com/EasyTidy/EasyTidy-Releases/releases" variant="minimal" icon="open-book">View all historical versions →</LinkButton>
+</div>
+
+---
+
+## 📂 Alternative Mirrors
+
+If you are unable to access GitHub, you can also obtain the official installation packages from the following mirrors:
+
+* **📁 LanZuo Cloud**：[🚀 Go to Mirror Download](#) *(No login required, full-speed download)*
+* **☁️ 123 Cloud**：[🔗 Go to Mirror Backup](#)
+
+---
+
+::::note[💡 Tips for Regions with Limited GitHub Access]
+Since this project is primarily hosted on GitHub, users in certain regions may experience slow or interrupted downloads when accessing GitHub Releases.
+
+**You can try the following solutions:**
+1. **Use mirrors first**: Choose the **mirror download** option for the most stable experience.
+2. **Use GitHub acceleration tools**: If you prefer to download from the official source, you can copy the **official GitHub download link** and use various **GitHub proxy sites, mirrors, or acceleration tools** (such as Watt Toolkit) to download via a relay.
+::::
+
+## 🔒 File Verification
+
+To verify that your downloaded files are complete and have not been tampered with, download the checksum file and compute the SHA-256 hash:
+
+- [checksums.txt](https://github.com/EasyTidy/EasyTidy-Releases/releases/latest/download/checksums.txt)
+
+Then verify with:
+
+```powershell
+Get-FileHash EasyTidyPro_WithRuntime_Setup.exe -Algorithm SHA256
+```
+
+::::tip[About Antivirus False Positives]
+As an independently developed productivity tool, some versions may trigger an "Unknown Publisher" warning from Windows Defender during download or first run. Be assured — EasyTidy Pro is **100% clean: no malware, no user data collection**. Simply click "Run anyway" to proceed safely.
+::::

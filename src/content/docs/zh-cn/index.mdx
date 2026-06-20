@@ -1,0 +1,58 @@
+---
+title: EasyTidy Pro
+description: 一个简单的文件自动分类整理工具，轻松组建文件工作流。
+template: splash
+hero:
+  title: |
+    欢迎使用 <span
+      class="font-black text-transparent
+        bg-clip-text bg-gradient-to-b
+        from-accent-700 to-accent-400
+        dark:from-accent-500 dark:to-accent-200"
+    >EasyTidy Pro</span>
+  tagline: 告别凌乱，让文件自动归类。一次配置，重回井然秩序。
+  image:
+    file: ../../../assets/logo.png
+    alt: EasyTidy Logo
+  actions:
+    - text: 快速入门
+      link: /zh-cn/getting-started/
+      icon: right-arrow
+    - text: 立即下载
+      link: /zh-cn/download/
+      icon: download
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/EasyTidy
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## 特色功能
+
+<CardGrid stagger>
+  <Card title="自动文件分类" icon="list-format">
+    按名称、目录、大小、日期、属性、内容或正则表达式分类
+  </Card>
+  <Card title="实时文件监控" icon="magnifier">
+    实时对文件夹变动情况进行监控，自动分类操作
+  </Card>
+  <Card title="定时任务执行" icon="clock">
+    依据匹配条件，自动按照设定好的定时任务来执行相应操作
+  </Card>
+  <Card title="灵活规则系统" icon="code-branch">
+    支持 CRON 与多条件组合规则，满足复杂的文件分类需求
+  </Card>
+  <Card title="自动化工作流" icon="star">
+    将多个文件操作组合为自动流程
+  </Card>
+  <Card title="本地与云扩展" icon="server">
+    支持本地执行与 WebDAV 等扩展存储
+  </Card>
+</CardGrid>
+
+## 开始使用
+
+准备好自动整理文件了吗？查看[快速入门指南](/zh-cn/getting-started/)或[立即下载 EasyTidy Pro](/zh-cn/download/)。

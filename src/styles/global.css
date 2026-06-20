@@ -15,3 +15,22 @@
 Add additional Tailwind styles to this file:
 https://tailwindcss.com/docs/adding-custom-styles#using-custom-css
 */
+
+/* Hero 标题：高亮品牌名（渐变）与关键词，逐词通过 .mdx hero title 中的 span 控制 */
+.sl-hero .hero-brand {
+  background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* tagline 中的关键词高亮（如“自动”） */
+.sl-hero .tagline .hero-keyword {
+  color: var(--sl-color-accent-high);
+  font-weight: 700;
+}
+
+.sl-hero .sl-hero-image img {
+  max-height: 240px;
+  width: auto;
+}
