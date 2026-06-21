@@ -1,0 +1,62 @@
+---
+import Select from "@astrojs/starlight/components/Select.astro";
+
+/**
+ * 文档版本切换下拉框。
+ * - 默认显示当前所在版本（V2 为最新版）。
+ * - 切换时尽量跳转到另一版本中的等价页面，找不到则回退到该版本首页。
+ */
+
+const pathname = Astro.url.pathname;
+
+// 解析语言前缀（/zh-cn）与版本无关的页面路径。
+const localeMatch = pathname.match(/^(\/zh-cn)?(\/.*)?$/);
+const locale = localeMatch?.[1] ?? "";
+const rest = localeMatch?.[2] ?? "/";
+
+const isV1 = /^\/v1(\/|$)/.test(rest);
+
+// V1 与 V2 页面路径互相映射（去掉/加上 /v1 前缀，并处理首页差异）。
+function toV2(p: string): string {
+  let r = p.replace(/^\/v1/, "");
+  if (r === "" || r === "/") r = "/getting-started/";
+  return r;
+}
+function toV1(p: string): string {
+  if (p === "/" || p === "/getting-started/") return "/v1/";
+  return "/v1" + p;
+}
+
+const v2Href = locale + (isV1 ? toV2(rest) : rest) || "/";
+const v1Href = locale + (isV1 ? rest : toV1(rest));
+
+const options = [
+  { label: "V2 (Latest)", value: v2Href, selected: !isV1 },
+  { label: "V1 (Legacy)", value: v1Href, selected: isV1 },
+];
+---
+
+<starlight-version-select>
+  <Select
+    icon="document"
+    label="Documentation version"
+    options={options}
+    width="9em"
+  />
+</starlight-version-select>
+
+<script>
+  class StarlightVersionSelect extends HTMLElement {
+    constructor() {
+      super();
+      const select = this.querySelector("select");
+      if (!select) return;
+      select.addEventListener("change", (e) => {
+        if (e.currentTarget instanceof HTMLSelectElement) {
+          window.location.pathname = e.currentTarget.value;
+        }
+      });
+    }
+  }
+  customElements.define("starlight-version-select", StarlightVersionSelect);
+</script>
