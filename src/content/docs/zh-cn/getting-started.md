@@ -1,13 +1,19 @@
 ---
 title: 快速入门
-description: 开始使用 EasyTidy —— 一个简单的文件自动分类整理工具。
+description: 开始使用 EasyTidy Pro —— 一个简单的文件自动分类整理工具。
 ---
 
-EasyTidy 是一个简单的文件自动分类整理工具，能轻松组建文件工作流，使用 WinUI3 .NET8 构建。
+EasyTidy Pro 是一个专为 Windows 用户打造的现代化、全离线文件自动分类整理工具。
+ - **自动化归档：** 基于灵活的规则引擎，实现文件的一键或全自动分类。
+ - **现代化体验：** 深度融入 Fluent UI 设计语言，带来精致、流畅的视觉与交互。
+ - **纯离线运行：** 无需网络连接，在保障极致处理性能的同时，绝对守护您的数据隐私。
 
-## 快速使用
+## 准备工作
 
-建议通过 [GitHub](https://github.com/SaboZhang/EasyTidy/releases) 或者 [云盘](/zh-cn/download)进行下载，当然如果你想自己修改编译也是可以的。
+在开始配置前，请确保满足以下条件：
+
+ - **系统要求：** Windows 10 (1809 及以上) 或 Windows 11。
+ - **获取软件：** 前往[官网](https://download.easytidy.net/stable/EasyTidyPro_win-x64_Setup.exe)或 [Releases](https://github.com/EasyTidy/EasyTidy-Releases/releases) 页面下载最新版本的 EasyTidy Pro 安装包。
 
 **要求**
 
