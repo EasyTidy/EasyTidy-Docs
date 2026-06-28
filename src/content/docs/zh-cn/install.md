@@ -17,7 +17,12 @@ description: EasyTidy Pro 安装、便携模式配置与卸载的完整指引。
 
 | 依赖 | 版本要求 | 说明 |
 |------|----------|------|
-| [.NET Desktop Runtime](https://dotnet.microsoft.com/zh-cn/download/dotnet/10.0/runtime) | 10.0 | 必需运行时，若已安装则可跳过 |
+| [.NET Desktop Runtime](https://aka.ms/dotnet/10.0/windowsdesktop-runtime-win-x64.exe) | 10.x | 必需运行时，若已安装则可跳过 |
+| [ASP.NET Core Runtime](https://aka.ms/dotnet/10.0/aspnetcore-runtime-win-x64.exe) | 10.x | 必需运行时，若已安装则可跳过 |
+
+:::tip
+安装程序会自动检测系统环境，并在缺少依赖时引导你完成安装，无需手动下载或配置。
+:::
 
 ### 官方安全下载渠道
 
