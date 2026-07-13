@@ -71,53 +71,121 @@ export default defineConfig({
               translations: { "zh-CN": "安装指南" },
               slug: "install",
             },
+            {
+              label: "Download",
+              translations: { "zh-CN": "下载" },
+              slug: "download",
+            },
           ],
         },
         {
-          label: "Features Guide",
-          translations: { "zh-CN": "功能指南" },
+          label: "File Organization",
+          translations: { "zh-CN": "文件整理" },
           collapsed: false,
           items: [
             {
-              label: "Settings",
-              translations: { "zh-CN": "常规设置" },
-              slug: "guide/general",
-            },
-            {
-              label: "Task Management",
-              translations: { "zh-CN": "任务编排" },
+              label: "Organize Tasks",
+              translations: { "zh-CN": "整理任务" },
               slug: "guide/task",
             },
             {
-              label: "Advanced Rules",
-              translations: { "zh-CN": "高级规则" },
-              slug: "guide/filter",
+              label: "Advanced Workflows",
+              translations: { "zh-CN": "高级流程" },
+              slug: "guide/workflow",
             },
             {
-              label: "Automation",
-              translations: { "zh-CN": "自动化配置" },
+              label: "Automatic Runs",
+              translations: { "zh-CN": "自动运行" },
               slug: "guide/automation",
             },
             {
+              label: "Filters and Conditions",
+              translations: { "zh-CN": "筛选条件" },
+              slug: "guide/filter",
+            },
+            {
               label: "Rules Reference",
-              translations: { "zh-CN": "配置规则" },
+              translations: { "zh-CN": "规则参考" },
               slug: "guide/rules",
             },
             {
-              label: "Shortcuts",
-              translations: { "zh-CN": "热键设置" },
-              slug: "guide/shortcut",
+              label: "Tags",
+              translations: { "zh-CN": "标签中心" },
+              slug: "guide/tags",
             },
+          ],
+        },
+        {
+          label: "Intelligent Features",
+          translations: { "zh-CN": "智能能力" },
+          items: [
             {
               label: "AI Services",
               translations: { "zh-CN": "AI 服务" },
               slug: "guide/ai",
             },
+            {
+              label: "Visual Review",
+              translations: { "zh-CN": "待确认" },
+              slug: "guide/visual-review",
+            },
           ],
         },
         {
-          label: "More",
-          translations: { "zh-CN": "更多" },
+          label: "Integrations and Transfer",
+          translations: { "zh-CN": "集成与传输" },
+          items: [
+            {
+              label: "Cloud Storage",
+              translations: { "zh-CN": "云存储" },
+              slug: "guide/cloud-storage",
+            },
+            {
+              label: "File Delivery",
+              translations: { "zh-CN": "文件传输" },
+              slug: "guide/file-delivery",
+            },
+            {
+              label: "OCR and Document Parsing",
+              translations: { "zh-CN": "OCR 与文档解析" },
+              slug: "guide/ocr",
+            },
+          ],
+        },
+        {
+          label: "Settings and Maintenance",
+          translations: { "zh-CN": "设置与维护" },
+          items: [
+            {
+              label: "General Settings",
+              translations: { "zh-CN": "常规设置" },
+              slug: "guide/general",
+            },
+            {
+              label: "Shortcuts",
+              translations: { "zh-CN": "快捷键" },
+              slug: "guide/shortcut",
+            },
+            {
+              label: "Optional Components",
+              translations: { "zh-CN": "可选组件" },
+              slug: "guide/components",
+            },
+            {
+              label: "Backup and Restore",
+              translations: { "zh-CN": "备份与还原" },
+              slug: "guide/backup",
+            },
+            {
+              label: "Running Logs",
+              translations: { "zh-CN": "运行日志" },
+              slug: "guide/logs",
+            },
+          ],
+        },
+        {
+          label: "Help and Support",
+          translations: { "zh-CN": "帮助与支持" },
           items: [
             {
               label: "FAQ",
@@ -128,11 +196,6 @@ export default defineConfig({
               label: "About EasyTidy Pro",
               translations: { "zh-CN": "关于 EasyTidy Pro" },
               slug: "about",
-            },
-            {
-              label: "Download",
-              translations: { "zh-CN": "下载" },
-              slug: "download",
             },
           ],
         },
