@@ -36,7 +36,7 @@ The installer checks for the required .NET runtime and guides you through instal
 
 ## Getting to Know the Interface
 
-![EasyTidy Pro Home](/images/home.png)
+![EasyTidy Pro Home](/images/en/home-en.png)
 
 The main navigation includes the following sections:
 

@@ -36,7 +36,7 @@ EasyTidy Pro 支持以下系统：
 
 ## 认识主界面
 
-![EasyTidy Pro 首页](/images/home.png)
+![EasyTidy Pro 首页](/images/zh/home.png)
 
 当前主导航包含以下入口：
 
