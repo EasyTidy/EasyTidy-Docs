@@ -80,7 +80,30 @@ It is recommended to place the software in a user-writable directory, such as:
 This ensures that portable mode configuration, logs, and data can be read and written correctly.
 :::
 
-### Activation
+### Enable from Settings (Recommended)
+
+If EasyTidy Pro is currently using the system configuration, you can switch to portable mode directly in the application:
+
+1. Make sure EasyTidy Pro is located in a directory writable by the current user.
+2. Open EasyTidy Pro and go to **Settings → General Settings**.
+3. Find **Portable Configuration → Portable Configuration Mode** and confirm that the current mode is **System Config**.
+4. Click **Switch Mode**.
+5. Choose how the existing configuration should be handled:
+   - **Copy and Switch**: Copy the current settings, tasks, and database into the program directory before switching. Use this to keep your existing data.
+   - **Use Empty Config**: Create a new portable configuration without copying data from the system configuration.
+6. Wait for the application to restart, then return to the same section and confirm that the current mode is **Portable Config**.
+
+![Switching to portable configuration mode in General Settings](/images/en/portable-config-settings.gif)
+
+:::tip
+Choose **Copy and Switch** if you need to retain existing tasks and settings. You can also create a backup from **Settings → Backup and Restore** before switching.
+:::
+
+:::note
+After the mode is changed, EasyTidy Pro displays a notification and automatically restarts after approximately three seconds.
+:::
+
+### Enable Manually
 
 Create an empty folder named **`portable_config`** in the same directory as `EasyTidyPro.exe`:
 
@@ -90,11 +113,14 @@ EasyTidyPro\
 └── portable_config\      ← Create this empty folder manually
 ```
 
+Exit and restart EasyTidy Pro to use the new, empty portable configuration. Creating the directory manually does not copy your existing system configuration; use **Copy and Switch** in Settings when you need to retain existing data.
+
 ### How It Works
 
 - When the `portable_config` folder exists, EasyTidy automatically writes all configuration, logs, and database files into this folder instead of the system AppData directory.
 - When the `portable_config` folder does not exist, EasyTidy falls back to standard mode, storing data in `%APPDATA%\EasyTidyPro`.
-- Switching modes does **not** auto-migrate existing configuration files; you must copy them manually.
+- When switching from Settings, you can copy the existing configuration or start with an empty one. Creating `portable_config` manually does not migrate existing data.
+- To return to the system configuration, click **Switch Mode** in the same section and choose whether to copy the portable configuration into the system configuration directory.
 
 ## Upgrade & Uninstall
 
