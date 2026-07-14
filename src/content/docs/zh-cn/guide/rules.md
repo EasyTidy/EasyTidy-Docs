@@ -12,7 +12,7 @@ description: 学习 EasyTidy Pro 的文件匹配、高级筛选、重命名模�
 
 ## 创建一条整理规则
 
-进入 **文件整理 → 整理任务**，点击新建任务，然后依次设置：
+进入 **文件整理 → 整理任务**，点击 <span class="fluent-icon fluent-icon--task-add" aria-hidden="true"></span> **新建任务**，然后依次设置：
 
 1. **任务名称**：使用容易理解的名称，例如“归档下载目录中的 PDF”。
 2. **源目录**：选择需要扫描的文件夹。一个任务可以配置多个来源；是否扫描子文件夹由常规设置和任务配置共同决定。
@@ -20,7 +20,7 @@ description: 学习 EasyTidy Pro 的文件匹配、高级筛选、重命名模�
 4. **操作方式**：选择移动、复制、重命名、压缩、标签、去重或其他操作。
 5. **目标位置或操作参数**：移动、复制等操作需要目标目录；重命名、压缩、AI 等操作会显示各自的参数。
 6. **高级筛选（可选）**：进一步限制文件大小、时间、属性或内容。
-7. 保存任务后，先使用 **执行一次** 检查预览，再确认执行。
+7. 保存任务后，先使用 <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **执行一次** 检查预览，再确认执行。
 
 规则只决定任务如何处理文件。若希望任务按时间、文件变化或应用启动自动执行，还需要在[自动运行](/zh-cn/guide/automation/)中添加触发方式。
 
@@ -163,11 +163,11 @@ ${parent}-${increment=1,padding=4,start=1}
 
 1. 下载 `.etrule` 文件。
 2. 进入 **文件整理 → 整理任务**。
-3. 打开页面顶部的更多菜单，选择 **导入规则 (.etrule)**。
+3. 打开页面顶部的 <span class="fluent-icon fluent-icon--more" aria-hidden="true"></span> **更多菜单**，选择 <span class="fluent-icon fluent-icon--import" aria-hidden="true"></span> **导入规则 (.etrule)**。
 4. 选择下载的 `pdf-downloads-to-documents.etrule`。
 5. 导入成功后，在任务列表中找到“PDF 归档示例（复制）”。
 6. 检查源目录和目标目录，必要时改成专门的测试文件夹。
-7. 在下载目录放入一个测试 PDF，点击 **执行一次**。
+7. 在下载目录放入一个测试 PDF，点击 <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **执行一次**。
 8. 在预览中确认只包含测试文件、操作为“复制”、目标路径正确，然后确认执行。
 
 <!-- 图片要求：组合展示“更多菜单中的导入规则”与“导入后任务列表中的 PDF 归档示例”两个状态；可使用左右拼图，并用标注框突出菜单项和任务行。 -->
@@ -183,7 +183,7 @@ ${parent}-${increment=1,padding=4,start=1}
 导出整理任务：
 
 1. 在整理任务列表中选中一条任务。
-2. 打开更多菜单，选择 **分享规则 (.etrule)**。
+2. 打开 <span class="fluent-icon fluent-icon--more" aria-hidden="true"></span> **更多菜单**，选择 <span class="fluent-icon fluent-icon--share" aria-hidden="true"></span> **分享规则 (.etrule)**。
 3. 选择保存位置并发送生成的文件。
 
 导入时，EasyTidy Pro 会检查规则类型。整理任务分享包应从“整理任务”页面导入，高级流程分享包应从“高级流程”页面导入。若规则使用了接收方不存在的自定义路径别名，应用会要求接收方指定对应目录。

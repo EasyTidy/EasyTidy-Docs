@@ -89,6 +89,11 @@ export default defineConfig({
               slug: "guide/task",
             },
             {
+              label: "Drag and Quick Organize",
+              translations: { "zh-CN": "拖拽与快速整理" },
+              slug: "guide/drag-organize",
+            },
+            {
               label: "Advanced Workflows",
               translations: { "zh-CN": "高级流程" },
               slug: "guide/workflow",
@@ -165,6 +170,11 @@ export default defineConfig({
               label: "General Settings",
               translations: { "zh-CN": "常规设置" },
               slug: "guide/general",
+            },
+            {
+              label: "Windows Context Menu",
+              translations: { "zh-CN": "Windows 右键菜单" },
+              slug: "guide/context-menu",
             },
             {
               label: "Shortcuts",

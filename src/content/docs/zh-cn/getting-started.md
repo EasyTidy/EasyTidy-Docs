@@ -65,8 +65,8 @@ Windows 可能会自动隐藏新安装应用的托盘图标。建议将 EasyTidy
 
 可以从任一入口打开：
 
-- 首次使用时，在首页点击 **创建第一个整理任务**。
-- 进入 **文件整理 → 整理任务**，点击 **添加任务** 右侧的下拉菜单，再选择 **快速创建**。
+- 首次使用时，在首页点击 <span class="fluent-icon fluent-icon--task-add" aria-hidden="true"></span> **创建第一个整理任务**。
+- 进入 **文件整理 → 整理任务**，点击 <span class="fluent-icon fluent-icon--task-add" aria-hidden="true"></span> **添加任务** 右侧的 <span class="fluent-icon fluent-icon--chevron-down" aria-hidden="true"></span> **下拉菜单**，再选择 <span class="fluent-icon fluent-icon--flash" aria-hidden="true"></span> **快速创建**。
 
 如果需要正则表达式、AI 操作、路径别名或其他完整参数，请改选“直接新增”。
 
@@ -75,7 +75,7 @@ Windows 可能会自动隐藏新安装应用的托盘图标。建议将 EasyTidy
 源文件夹是 EasyTidy Pro 查找待整理文件的位置。你可以：
 
 - 选择“下载”“桌面”或“图片”快捷入口。
-- 点击文件夹按钮浏览目录。
+- 点击 <span class="fluent-icon fluent-icon--folder-open" aria-hidden="true"></span> **文件夹**按钮浏览目录。
 - 将文件夹直接拖到源文件夹输入框。
 
 建议第一次使用时新建一个测试文件夹，并放入少量测试文件，不要直接选择系统目录或重要资料目录。
@@ -103,7 +103,7 @@ Windows 可能会自动隐藏新安装应用的托盘图标。建议将 EasyTidy
 
 ### 5. 创建并预览
 
-点击 **创建并预览** 后，任务会被保存，并显示本次可能处理的文件。
+点击 <span class="fluent-icon fluent-icon--eye" aria-hidden="true"></span> **创建并预览** 后，任务会被保存，并显示本次可能处理的文件。
 
 预览阶段不会修改文件。请重点检查：
 
@@ -122,7 +122,7 @@ Windows 可能会自动隐藏新安装应用的托盘图标。建议将 EasyTidy
 
 ## 查看结果与撤销
 
-任务完成后，应用会显示处理数量。存在可撤销记录时，可以立即撤销刚才的整理操作；也可以使用应用内撤销入口或内置快捷键【Ctrl Z】恢复最近一次受支持的操作。
+任务完成后，应用会显示处理数量。存在可撤销记录时，可以点击 <span class="fluent-icon fluent-icon--undo" aria-hidden="true"></span> **撤销刚才的操作**；也可以使用应用内撤销入口或内置快捷键【Ctrl Z】恢复最近一次受支持的操作。
 
 撤销能力取决于操作类型、备份状态和保留时间。永久删除、外部程序、云端上传等操作不一定能够撤销，因此不能用撤销功能替代备份。
 
@@ -134,9 +134,9 @@ Windows 可能会自动隐藏新安装应用的托盘图标。建议将 EasyTidy
 
 - 手动执行单个任务。
 - 启用或停用任务。
-- 编辑、复制或删除任务。
+- 使用 <span class="fluent-icon fluent-icon--edit" aria-hidden="true"></span> **编辑**、<span class="fluent-icon fluent-icon--copy" aria-hidden="true"></span> **复制** 或 <span class="fluent-icon fluent-icon--delete" aria-hidden="true"></span> **删除** 管理任务。
 - 使用分组筛选和批量执行任务。
-- 导入、导出或分享规则。
+- 使用 <span class="fluent-icon fluent-icon--import" aria-hidden="true"></span> **导入**、<span class="fluent-icon fluent-icon--export" aria-hidden="true"></span> **导出** 或 <span class="fluent-icon fluent-icon--share" aria-hidden="true"></span> **分享规则** 交换任务配置。
 - 为常用任务创建桌面快捷方式。
 
 需要编写更精确的文件规则时，请参阅[整理任务](/zh-cn/guide/task)和[文件规则](/zh-cn/guide/rules)。

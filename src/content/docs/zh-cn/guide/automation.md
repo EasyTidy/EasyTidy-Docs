@@ -73,8 +73,8 @@ description: 为 EasyTidy Pro 整理任务配置文件变更、启动、定期�
 
 进入“完成配置”步骤后，自动化配置已经保存。此页提供两种验证方式：
 
-- **预览结果**：计算匹配文件和操作流向，不修改文件。
-- **立即运行**：忽略触发时间，立刻真实执行所选任务。
+- <span class="fluent-icon fluent-icon--eye" aria-hidden="true"></span> **预览结果**：计算匹配文件和操作流向，不修改文件。
+- <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **立即运行**：忽略触发时间，立刻真实执行所选任务。
 
 第一次配置时应先使用“预览结果”。只有确认匹配数量、来源和目标都正确后，再选择“立即运行”进行测试。
 
@@ -203,7 +203,7 @@ EasyTidy Pro 的计划使用 Quartz 六字段格式，第一位是“秒”。Li
 
 关闭触发器会在 EasyTidy Pro **完全退出**或收到系统关闭流程时尝试执行任务。
 
-- 点击窗口关闭按钮并最小化到托盘通常不会触发，因为应用仍在运行。
+- 点击 <span class="fluent-icon fluent-icon--dismiss" aria-hidden="true"></span> **窗口关闭**按钮并最小化到托盘通常不会触发，因为应用仍在运行。
 - 从托盘选择“退出”才属于应用退出。
 - Windows 关机、注销、强制结束进程、崩溃或系统快速关闭时，可用执行时间有限，不能保证任务完成。
 
@@ -233,22 +233,39 @@ EasyTidy Pro 的计划使用 Quartz 六字段格式，第一位是“秒”。Li
 
 “自动运行”页面右侧会列出已经关联的任务，每张任务卡提供以下操作：
 
-- **编辑**：只修改该任务的触发方式和参数。
-- **运行**：不等待触发条件，立即执行一次。
-- **删除**：删除该任务的自动触发器，不删除整理任务本身。
+- <span class="fluent-icon fluent-icon--edit" aria-hidden="true"></span> **编辑**：只修改该任务的触发方式和参数。
+- <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **运行**：不等待触发条件，立即执行一次。
+- <span class="fluent-icon fluent-icon--delete" aria-hidden="true"></span> **删除**：删除该任务的自动触发器，不删除整理任务本身。
 
 重新进入向导并取消勾选一个原本已配置的任务，完成保存后也会移除该任务的触发器。删除或取消前应确认不是只想临时暂停。
 
-## 从托盘暂停和恢复
+## 使用系统托盘
 
-右键系统托盘中的 EasyTidy Pro 图标，可以暂停或恢复全部自动运行：
+EasyTidy Pro 在后台运行时会保留系统托盘图标。单击图标会打开 **快速整理浮窗**；右键图标可以控制自动任务、打开窗口或退出应用。
 
-- **暂停所有任务**：暂停文件监控和定时调度，但不删除配置。
-- **恢复所有任务**：重新启用文件监控和定时调度。
+<!-- 图片要求：截取 Windows 系统托盘中的 EasyTidy Pro 右键菜单，完整显示立即整理、快速整理浮窗、显示窗口、暂停/恢复、全局快捷键、设置和退出。 -->
+![EasyTidy Pro 系统托盘菜单（图片占位）](/images/zh/tray-menu-placeholder.png)
 
-对于支持 USN 日志的本地 NTFS 目录，恢复监控时应用会尝试补查暂停期间的文件变化；其他目录不保证补查。暂停期间错过的 CRON 时间点不会补跑。
+托盘菜单包含以下命令：
+
+- <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **立即整理一次**：立即触发全部已配置任务运行一次，不等待原有触发条件；命令发出后会显示系统通知。
+- **打开快速整理浮窗**：打开可接收文件拖入的独立浮窗。它与 Pro 用户拖动文件时自动出现的浮窗不是同一个窗口，详见[拖拽与快速整理](/zh-cn/guide/drag-organize/)。
+- **显示窗口**：恢复并显示 EasyTidy Pro 主窗口。
+- <span class="fluent-icon fluent-icon--pause" aria-hidden="true"></span> **暂停所有任务**：暂停文件监控和定时调度，但不删除任务及触发器配置。
+- <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **恢复所有任务**：重新启用文件监控和定时调度。
+- **禁用全局快捷键 / 恢复快捷键**：临时停用或重新注册 EasyTidy Pro 的全部全局快捷键，不会删除快捷键配置。
+- **设置**：显示主窗口并直接进入设置页。
+- <span class="fluent-icon fluent-icon--dismiss" aria-hidden="true"></span> **退出**：完全退出 EasyTidy Pro，并触发符合条件的“关闭时执行”任务。
+
+### 暂停与恢复的影响
+
+对于支持 USN 日志的本地 NTFS 目录，恢复监控时应用会尝试补查暂停期间的文件变化；网络共享、移动设备和不支持 USN 的文件系统不保证补查。暂停期间错过的 CRON 时间点不会补跑。
 
 临时处理大量文件、调整规则或维护目标存储时，优先使用全局暂停；需要长期停用某个任务时，应编辑或删除该任务的触发器。
+
+### 关闭窗口与退出应用
+
+点击主窗口右上角的 <span class="fluent-icon fluent-icon--dismiss" aria-hidden="true"></span> **关闭** 后，如果应用仍保留在托盘中，自动运行会继续工作，也不会触发“关闭时执行”。只有从托盘选择 **退出**，或系统真正结束应用进程，才属于完全退出。
 
 ## 推荐配置示例
 

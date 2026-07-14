@@ -13,8 +13,8 @@ description: 使用本地目录或 WebDAV 备份 EasyTidy Pro 配置，并在需
 
 展开后可以看到：
 
-- **备份**：立即创建一个备份。
-- **还原**：使用已有备份恢复配置。
+- <span class="fluent-icon fluent-icon--backup" aria-hidden="true"></span> **备份**：立即创建一个备份。
+- <span class="fluent-icon fluent-icon--restore" aria-hidden="true"></span> **还原**：使用已有备份恢复配置。
 - **自动备份**：按设定时间自动创建备份。
 - **位置**：选择保存到本地或 WebDAV。
 - **备份目录**：本地备份文件的保存位置。
@@ -31,8 +31,8 @@ description: 使用本地目录或 WebDAV 备份 EasyTidy Pro 配置，并在需
 
 1. 在“位置”右侧选择 **本地**。
 2. 查看“备份目录”。如果不修改，备份会保存在当前配置目录中。
-3. 如果希望保存到其他磁盘，点击备份目录右侧的文件夹按钮，选择一个长期可用的文件夹。
-4. 点击卡片右上角的 **备份**。
+3. 如果希望保存到其他磁盘，点击备份目录右侧的 <span class="fluent-icon fluent-icon--folder-open" aria-hidden="true"></span> **文件夹**按钮，选择一个长期可用的文件夹。
+4. 点击卡片右上角的 <span class="fluent-icon fluent-icon--backup" aria-hidden="true"></span> **备份**。
 5. 等待成功提示，不要在备份过程中退出应用。
 6. 在“上次备份”中确认保存位置。生成的文件名类似 `EasyTidyPro_Backup_20260714123000.zip`。
 
@@ -65,7 +65,7 @@ WebDAV 可以把备份保存到支持 WebDAV 的网盘、NAS 或自建服务器�
 1. 进入 **集成设置 → WebDAV**。
 2. 找到用于**应用备份**的 WebDAV 配置区域。
 3. 填写服务器地址、端口、用户名、密码和远端备份目录。
-4. 点击连接测试，确认能够访问服务器。
+4. 点击 <span class="fluent-icon fluent-icon--plug" aria-hidden="true"></span> **连接测试**，确认能够访问服务器。
 5. 保存配置。
 
 不同网盘和 NAS 的服务器地址、授权方式可能不同。完整填写说明、连接测试和常见服务配置请查看[云存储与 WebDAV 配置指南](/zh-cn/guide/cloud-storage/)。
@@ -82,7 +82,7 @@ WebDAV 可以把备份保存到支持 WebDAV 的网盘、NAS 或自建服务器�
 1. 返回 **设置 → 常规设置 → 备份与恢复**。
 2. 在“位置”中选择 **WebDAV**。
 3. 检查页面显示的远端位置。若提示尚未配置，请返回 WebDAV 集成页面完成并保存应用备份账户。
-4. 点击 **备份**。
+4. 点击 <span class="fluent-icon fluent-icon--backup" aria-hidden="true"></span> **备份**。
 5. 等待上传成功提示，并在“上次备份”中确认远端位置。
 
 如果没有填写远端目录，应用会使用默认备份目录。为了便于管理，建议为 EasyTidy Pro 单独建立备份文件夹，不要和照片、文档或其他软件备份混放。
@@ -95,7 +95,7 @@ WebDAV 可以把备份保存到支持 WebDAV 的网盘、NAS 或自建服务器�
 
 1. 进入 **设置 → 常规设置 → 备份与恢复**。
 2. 在“位置”中选择 **本地**。
-3. 点击 **还原**。
+3. 点击 <span class="fluent-icon fluent-icon--restore" aria-hidden="true"></span> **还原**。
 4. 在文件选择窗口中选择一个 `EasyTidyPro_Backup_*.zip` 备份文件。
 5. 等待还原完成。
 6. 应用会自动重新启动，使恢复的任务和设置生效。
@@ -111,7 +111,7 @@ WebDAV 可以把备份保存到支持 WebDAV 的网盘、NAS 或自建服务器�
 
 1. 在“位置”中选择 **WebDAV**。
 2. 确认页面显示的远端备份位置正确。
-3. 点击 **还原**。
+3. 点击 <span class="fluent-icon fluent-icon--restore" aria-hidden="true"></span> **还原**。
 4. 等待备份下载和恢复完成。
 5. 应用会自动重启。
 

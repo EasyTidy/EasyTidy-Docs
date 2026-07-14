@@ -93,7 +93,7 @@ If EasyTidy Pro is currently using the system configuration, you can switch to p
    - **Use Empty Config**: Create a new portable configuration without copying data from the system configuration.
 6. Wait for the application to restart, then return to the same section and confirm that the current mode is **Portable Config**.
 
-![Switching to portable configuration mode in General Settings](/images/en/portable-config-settings.gif)
+![Switching to portable configuration mode in General Settings](/images/en/portable-config-settings.webp)
 
 :::tip
 Choose **Copy and Switch** if you need to retain existing tasks and settings. You can also create a backup from **Settings → Backup and Restore** before switching.

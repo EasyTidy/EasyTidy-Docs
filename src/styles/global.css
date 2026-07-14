@@ -34,3 +34,48 @@ https://tailwindcss.com/docs/adding-custom-styles#using-custom-css
   max-height: 240px;
   width: auto;
 }
+
+
+/* Fluent UI System Icons used in inline button references. */
+.fluent-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-inline-end: 0.15em;
+  vertical-align: -0.14em;
+  background-color: currentColor;
+  -webkit-mask: var(--fluent-icon-url) center / contain no-repeat;
+  mask: var(--fluent-icon-url) center / contain no-repeat;
+}
+
+.fluent-icon--add { --fluent-icon-url: url('/icons/fluent/add.svg'); }
+.fluent-icon--task-add { --fluent-icon-url: url('/icons/fluent/task-add.svg'); }
+.fluent-icon--flash { --fluent-icon-url: url('/icons/fluent/flash.svg'); }
+.fluent-icon--folder-open { --fluent-icon-url: url('/icons/fluent/folder-open.svg'); }
+.fluent-icon--eye { --fluent-icon-url: url('/icons/fluent/eye.svg'); }
+.fluent-icon--play { --fluent-icon-url: url('/icons/fluent/play.svg'); }
+.fluent-icon--pause { --fluent-icon-url: url('/icons/fluent/pause.svg'); }
+.fluent-icon--edit { --fluent-icon-url: url('/icons/fluent/edit.svg'); }
+.fluent-icon--delete { --fluent-icon-url: url('/icons/fluent/delete.svg'); }
+.fluent-icon--copy { --fluent-icon-url: url('/icons/fluent/copy.svg'); }
+.fluent-icon--share { --fluent-icon-url: url('/icons/fluent/share.svg'); }
+.fluent-icon--sync { --fluent-icon-url: url('/icons/fluent/sync.svg'); }
+.fluent-icon--undo { --fluent-icon-url: url('/icons/fluent/undo.svg'); }
+.fluent-icon--export { --fluent-icon-url: url('/icons/fluent/export.svg'); }
+.fluent-icon--import { --fluent-icon-url: url('/icons/fluent/import.svg'); }
+.fluent-icon--document-table { --fluent-icon-url: url('/icons/fluent/document-table.svg'); }
+.fluent-icon--save { --fluent-icon-url: url('/icons/fluent/save.svg'); }
+.fluent-icon--dismiss { --fluent-icon-url: url('/icons/fluent/dismiss.svg'); }
+.fluent-icon--reset { --fluent-icon-url: url('/icons/fluent/reset.svg'); }
+.fluent-icon--more { --fluent-icon-url: url('/icons/fluent/more.svg'); }
+.fluent-icon--chevron-down { --fluent-icon-url: url('/icons/fluent/chevron-down.svg'); }
+.fluent-icon--swap { --fluent-icon-url: url('/icons/fluent/swap.svg'); }
+.fluent-icon--filter { --fluent-icon-url: url('/icons/fluent/filter.svg'); }
+.fluent-icon--checkbox { --fluent-icon-url: url('/icons/fluent/checkbox.svg'); }
+.fluent-icon--database { --fluent-icon-url: url('/icons/fluent/database.svg'); }
+.fluent-icon--sort { --fluent-icon-url: url('/icons/fluent/sort.svg'); }
+.fluent-icon--download { --fluent-icon-url: url('/icons/fluent/download.svg'); }
+.fluent-icon--checkmark { --fluent-icon-url: url('/icons/fluent/checkmark.svg'); }
+.fluent-icon--backup { --fluent-icon-url: url('/icons/fluent/backup.svg'); }
+.fluent-icon--restore { --fluent-icon-url: url('/icons/fluent/restore.svg'); }
+.fluent-icon--plug { --fluent-icon-url: url('/icons/fluent/plug.svg'); }

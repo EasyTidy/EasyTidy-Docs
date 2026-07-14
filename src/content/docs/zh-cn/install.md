@@ -49,10 +49,10 @@ Get-FileHash .\EasyTidy_Setup_<版本>.exe -Algorithm SHA256
 2. 在安装向导中阅读并同意许可协议。
 3. **选择安装路径**：
    - **默认路径**：`C:\Program Files\EasyTidyPro`
-   - **自定义路径**：点击「浏览」选择其他目录
+   - **自定义路径**：点击 <span class="fluent-icon fluent-icon--folder-open" aria-hidden="true"></span> **浏览** 选择其他目录
 4. 根据需要勾选「创建桌面快捷方式」等附加选项。
-5. 点击「安装」并等待安装完成。
-6. 点击「完成」退出安装向导，EasyTidy 将自动启动。
+5. 点击 <span class="fluent-icon fluent-icon--download" aria-hidden="true"></span> **安装** 并等待安装完成。
+6. 点击 <span class="fluent-icon fluent-icon--checkmark" aria-hidden="true"></span> **完成** 退出安装向导，EasyTidy 将自动启动。
 
 ### 用户数据存储位置
 
@@ -92,13 +92,13 @@ C:\Users\<用户名>\AppData\Roaming\EasyTidy\
 1. 确认 EasyTidy Pro 位于当前用户可写的目录中。
 2. 打开 EasyTidy Pro，进入 **设置 → 常规设置**。
 3. 找到 **便携配置 → 便携配置模式**，确认当前显示为 **系统配置**。
-4. 点击 **切换模式**。
+4. 点击 <span class="fluent-icon fluent-icon--swap" aria-hidden="true"></span> **切换模式**。
 5. 在确认窗口中选择配置处理方式：
    - **复制并切换**：将当前配置、任务和数据库复制到程序目录后切换，适合继续使用现有数据。
    - **使用空配置**：创建新的便携配置，不复制当前系统配置中的数据。
 6. 等待应用自动重启，然后返回同一位置，确认当前模式显示为 **便携配置**。
 
-![通过常规设置切换到便携配置模式](/images/zh/portable-config-settings.gif)
+![通过常规设置切换到便携配置模式](/images/zh/portable-config-settings.webp)
 
 :::tip
 需要保留现有任务和设置时，建议选择 **复制并切换**。切换前也可在 **设置 → 备份与还原** 中创建备份。
@@ -125,7 +125,7 @@ EasyTidyPro\
 - 当 `portable_config` 文件夹存在时，EasyTidy 的所有配置、日志、数据库等数据将**自动写入该文件夹**，不再使用系统 AppData 目录。
 - 当 `portable_config` 文件夹不存在时，回退至标准模式，数据写入 `%APPDATA%\EasyTidyPro`。
 - 通过设置页面切换时，可以选择复制现有配置或使用空配置；手动新建 `portable_config` 时不会自动迁移已有数据。
-- 如需切回系统配置，可在同一位置再次点击 **切换模式**，并根据提示选择是否将便携配置复制到系统配置目录。
+- 如需切回系统配置，可在同一位置再次点击 <span class="fluent-icon fluent-icon--swap" aria-hidden="true"></span> **切换模式**，并根据提示选择是否将便携配置复制到系统配置目录。
 
 ## 升级与卸载说明
 
@@ -134,7 +134,7 @@ EasyTidyPro\
 两种模式均支持内置的「检查更新」功能：
 
 1. 打开 EasyTidy Pro，进入「设置」页面。
-2. 点击「检查更新」按钮。
+2. 点击 <span class="fluent-icon fluent-icon--sync" aria-hidden="true"></span> **检查更新** 按钮。
 3. 若检测到新版本，按照提示下载并安装更新。
 
 也可访问 [GitHub Releases](https://github.com/EasyTidy/EasyTidy-Releases/releases) 手动下载最新版本覆盖安装。
@@ -144,7 +144,7 @@ EasyTidyPro\
 #### 标准安装模式
 
 1. 打开 Windows「设置」→「应用」→「已安装的应用」。
-2. 搜索 `EasyTidyPro`，点击「卸载」。
+2. 搜索 `EasyTidyPro`，点击 <span class="fluent-icon fluent-icon--delete" aria-hidden="true"></span> **卸载**。
 3. 按照卸载程序提示完成移除。
 
 :::tip
