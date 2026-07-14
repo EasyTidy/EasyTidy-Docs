@@ -157,6 +157,11 @@ export default defineConfig({
           translations: { "zh-CN": "设置与维护" },
           items: [
             {
+              label: "Settings Overview",
+              translations: { "zh-CN": "设置概览" },
+              slug: "guide/settings",
+            },
+            {
               label: "General Settings",
               translations: { "zh-CN": "常规设置" },
               slug: "guide/general",
