@@ -38,7 +38,7 @@ File matching rules primarily target file names. English letter matching is case
 | `invoice*` | Match files starting with specific text | `invoice-001.xlsx` |
 | `*reviewed*` | Match files containing specific text in the name | `Contract-reviewed-v2.docx` |
 | `*.jpg;*.png;*.webp` | Combine multiple conditions with semicolons | Common image files |
-| <code>*.docx&#124;*.xlsx&#124;*.pptx</code> | Combine multiple conditions with pipes | Office documents |
+| `*.docx\|*.xlsx\|*.pptx` | Combine multiple conditions with pipes | Office documents |
 
 Multiple basic conditions mean "match any one of them". After entering rules, you can use the preset button next to the rule input to quickly select common combinations for documents, images, archives, etc.
 
