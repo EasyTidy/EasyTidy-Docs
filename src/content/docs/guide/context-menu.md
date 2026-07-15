@@ -1,48 +1,92 @@
 ---
 title: Windows Context Menu
-description: Register EasyTidy Pro in File Explorer and organize selected files through the default task group.
+description: Register EasyTidy Pro in File Explorer and organize selected files or folders through the default task group.
 ---
 
-The Windows context-menu integration sends selected files or folders directly to EasyTidy Pro. It is a silent workflow: no target picker is shown, and the configured **default task group** is used for routing.
+The Windows context-menu integration sends selected files or folders directly to EasyTidy Pro. It uses a silent organization workflow — no task selection window opens. Instead, the configured **default task group** is used to automatically match and route items.
 
-:::caution
-Set a default task group before using this entry point. Missing or disabled tasks, or an item that matches no rule, are reported as failures and leave the source unchanged.
-:::
+::::caution[Configure a default task group first]
+The context menu only organizes via the default task group. If no default group is set, the group contains no enabled tasks, or no files match any rule, the organization fails with a notification or failure window.
+::::
 
-## Register the menu
+## Registering the Context Menu
 
-1. Open **Settings → General Settings → Application Settings**.
-2. Choose **Classic menu** or **Modern menu** under **Context menu**.
-3. Select **Register context menu** and approve the Windows elevation prompt if shown.
+1. Open EasyTidy Pro and go to **Settings → General Settings → Application Settings**.
+2. Under **Context Menu**, choose **Classic Menu** or **Modern Menu**.
+3. Click **Register Context Menu**.
+4. When Windows shows a User Account Control prompt, approve the operation.
 
-<!-- Screenshot required: the General Settings context-menu card with style, register, and uninstall controls. -->
-![Context-menu settings (image placeholder)](/images/en/context-menu-settings-placeholder.png)
+<!-- Image requirements: Capture the "General Settings → Application Settings → Context Menu" card, fully showing the style dropdown, Register, and Uninstall buttons. -->
+![Context menu settings (image placeholder)](/images/en/context-menu-settings-placeholder.png)
 
-The classic style supports files and folders and normally appears under **Show more options** on Windows 11. The modern style integrates into the first-level Windows 11 menu. Installing or removing the modern component can restart File Explorer, briefly hiding and restoring the desktop and taskbar.
+### Classic Menu
 
-After reinstalling EasyTidy Pro or moving a portable installation, uninstall and register the menu again so it points to the current application files.
+The classic menu uses Windows 10-style Explorer menu entries and supports both files and folders. On Windows 11, it typically appears inside the classic menu opened via **Show more options**.
 
-## Organize from File Explorer
+The classic menu writes to the current user's file association settings; the menu entry shows the EasyTidy Pro name and application icon.
 
-1. Create and enable the required tasks, then mark their task group as the default group.
+### Modern Menu
+
+The modern menu targets Windows 11 and can integrate directly into the new context menu. During installation, the application registers the menu component shipped with the program. Windows may require administrator privileges and restarts File Explorer for the menu to take effect.
+
+When File Explorer restarts, the desktop and taskbar may briefly disappear and reappear — this is normal. Finish any ongoing file copy, rename, or other Explorer operations before installing.
+
+::::note[After reinstalling or moving the application]
+The classic menu records the current EasyTidy Pro executable location; the modern menu also depends on components in the installation directory. If the menu stops working after changing the upgrade method, moving a portable directory, or reinstalling, uninstall the menu first, then re-register from the current version.
+::::
+
+## Organizing via the Context Menu
+
+1. First, create and enable tasks on the Organization Tasks page, and set the group you want to use as the default group.
 2. Select one or more files or folders in File Explorer.
-3. Right-click and choose the EasyTidy Pro menu item.
+3. Right-click and choose the EasyTidy Pro menu entry.
+4. The application passes each path to the default task group, where rules automatically route them.
 
-<!-- Screenshot required: a Windows 11 modern menu and the classic menu under Show more options, with the EasyTidy Pro item clearly visible. -->
-![EasyTidy Pro in the Explorer context menu (image placeholder)](/images/en/context-menu-explorer-placeholder.png)
+<!-- Image requirements: Prepare separate screenshots for the Windows 11 modern context menu and the classic menu under "Show more options"; a composite placeholder image is fine for the body. The EasyTidy Pro menu entry must be clearly labeled. -->
+![Windows File Explorer context menu (image placeholder)](/images/en/context-menu-explorer-placeholder.png)
 
-Each path is routed through the default task group. Regular tasks are tried from higher to lower priority, `#` and `##` fallback rules run last, and processing stops after one task succeeds. If the app is already running, the path is forwarded to that instance instead of opening another full main window.
+The default group's execution order matches drag-and-drop organization:
 
-Successful processing is normally silent. A failure opens a lightweight failure view and notification so the default group, permissions, file locks, or rule match can be corrected.
+- Regular tasks are tried from highest to lowest priority;
+- `#` and `##` fallback rules are tried last;
+- Once a task successfully processes a path, processing stops — other tasks in the group are skipped for that path;
+- When no rule matches, the original file is left unchanged and a failure is reported.
 
-:::note
-The Explorer context menu cannot choose an individual task or workflow for each run. Use [Drag and Quick Organize](/guide/drag-organize/) when you need the target picker, file review, or immediate undo.
-:::
+If EasyTidy Pro is already running in the background, the path passed from Explorer is forwarded to the existing instance without opening another full main window. Successful runs are normally silent; failures show a lightweight failure window and system notification — use these to check the default group, file locks, permissions, or rule matches.
 
-## Uninstall or change styles
+::::note[Difference between context menu and drag-and-drop organization]
+The context menu always uses the default task group — you cannot temporarily pick a single task or workflow before execution. Use [Drag & Quick Organize](/guide/drag-organize/) when you need to select a target per-run, review the file list, or undo immediately.
+::::
 
-Use **Uninstall menu** to remove both classic and modern registrations. Selecting the disabled style by itself does not replace the uninstall operation.
+## Uninstalling or Switching Menu Styles
 
-To switch styles, uninstall the current integration, select the new style, register it, and reopen File Explorer. If a menu still points to an older app version, repeat this process from the current installation.
+To disable the context menu entry, click **Uninstall Menu**. The uninstall operation cleans up both classic and modern menu components; simply setting the style dropdown to "Disabled" is not a substitute for uninstalling.
 
-See [Organize Tasks](/guide/task/) for default groups and priority, and [General Settings](/guide/general/) for application permissions.
+When switching styles, follow this order:
+
+1. Click **Uninstall Menu**;
+2. Select the new menu style;
+3. Click **Register Context Menu**;
+4. Reopen File Explorer and verify the menu.
+
+Uninstalling the modern menu may also restart File Explorer.
+
+## FAQ
+
+### The context menu doesn't appear
+
+First confirm that the registration operation reported success. On Windows 11 with classic style, check under **Show more options**; with modern style, reopen the Explorer window. If the application directory was moved or the path changed after an upgrade, uninstall and re-register.
+
+### Clicking the menu entry doesn't organize files
+
+Confirm that a default task group is set, the group contains at least one enabled task, and the selected files match rules in that group. Context menu organization does not use the single task saved via "Remember my task choice" in the organization window as a fallback.
+
+### Permission or installation failure
+
+Allow the Windows User Account Control prompt and confirm that security software is not blocking the application's context menu components. If files required by the modern menu are missing, reinstall the full version rather than copying only the main executable.
+
+### Menu points to an older version
+
+First run **Uninstall Menu** from the current application, confirm the old installation directory has been removed, then re-register from the current version. Portable copies also need re-registration after moving directories.
+
+For default groups and task priority, see [Organization Tasks](/guide/task/); for application permissions and background settings, see [General Settings](/guide/general/).

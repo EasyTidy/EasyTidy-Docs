@@ -11,13 +11,17 @@ This document covers how to obtain EasyTidy Pro, standard installation, portable
 
 - **Windows 11** (64-bit)
 - **Windows 10** v2004 (build 19041) or higher (64-bit)
-- Arm64 is theoretically supported but not fully tested
 
 ### Required Dependencies
 
 | Dependency | Version | Notes |
 |------------|---------|-------|
 | [.NET Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime) | 10.0 | Required runtime; skip if already installed |
+| [ASP.NET Core Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime) | 10.0 | Required runtime; skip if already installed |
+
+::::tip
+The installer automatically detects your system environment and guides you through installing any missing dependencies — no manual download or configuration is needed.
+::::
 
 ### Official Download Channels
 

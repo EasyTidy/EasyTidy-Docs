@@ -36,7 +36,9 @@ Open <span class="fluent-icon fluent-icon--task-add" aria-hidden="true"></span> 
 ### 1. Enter Name & Group
 
 - **Task Name**: It is recommended to describe both the target and the action, e.g. "Move PDFs from Downloads."
-- **Task Group**: You can choose an existing group or type a new name. A default group is pre‑filled on first creation.
+- **Task Group**: Choose an existing group from the dropdown. New tasks default to the built-in **"Unassigned"** group — you do not need to create or manually enter a group name first.
+
+To add, rename, or delete custom groups, return to the task list, open the group selector at the top, and click **Group Management**. Group names must be unique; if you create or rename a group to an existing name, the app will prompt you to change it.
 
 Groups are used for filtering and batch execution; they do not imply dependencies between tasks. For branching, conditions, step chains, or failure strategies, use [Advanced Workflows](/guide/workflow/) instead.
 
@@ -109,6 +111,19 @@ Parameters vary greatly between operations. The following are most likely to aff
 - **Cloud Transfer**: Use a local source location for uploads and a local destination location for retrievals. Complete the node configuration and test the connection in Integration Settings before running.
 - **Run External Program**: Verify the executable, parameters, and working directory. Only run trusted programs or scripts.
 
+### File Camouflage (Pro)
+
+"File Camouflage" appends files to be processed to the end of an image, audio, video, or custom carrier file. The resulting carrier file remains openable in its original format. It is designed for concealed encapsulation and later restoration — it is **not** an encryption feature. Anyone who can read the binary contents of the file may still discover the appended data; sensitive content should be encrypted first.
+
+After selecting **File Camouflage**, choose an operation:
+
+- **Create Camouflage File**: Select an image, audio, video, or custom carrier. The carrier can be a single file or a directory. When using a directory, carriers are chosen for each processed file by random, filename, or file-size rules. Optionally enable "Delete original file after completion" and explicitly set the output location.
+- **Extract Hidden Content**: Use an already-generated camouflage file as the source, and extract the appended original content to the target location. You may optionally delete the camouflage file after successful extraction.
+
+::::caution[Keep the original files until verified]
+Do not enable the delete option on first use. First create a camouflage file with test data, confirm that the carrier file opens normally and the hidden content can be fully extracted, then decide whether to delete the originals or the camouflage file. File camouflage is not a substitute for encryption or backup.
+::::
+
 ### 6. Set Advanced Options & Save
 
 Expand **Advanced Options** to adjust the group again and use the following settings:
@@ -147,20 +162,21 @@ Not all operations can be undone. If a file has been moved, renamed, or deleted 
 
 ## Managing the Task List
 
-The task table displays ID, task name, source location, destination location, shortcut creation status, enabled state, and action buttons.
+The task table provides a checkbox at the beginning of each row and displays task name, source location, destination location, shortcut creation status, enabled state, and action buttons.
 
 - <span class="fluent-icon fluent-icon--checkbox" aria-hidden="true"></span> **Enable/Disable**: Click the checkbox in the **Enabled** column directly.
 - <span class="fluent-icon fluent-icon--edit" aria-hidden="true"></span> **Edit**: Modify rules, paths, and operation parameters. After saving, associated file monitors refresh automatically — a restart is usually not needed.
 - <span class="fluent-icon fluent-icon--delete" aria-hidden="true"></span> **Delete**: Single deletion requires confirmation. Deleting a task also removes its file‑monitoring configuration.
-- <span class="fluent-icon fluent-icon--copy" aria-hidden="true"></span> **Duplicate**: Select one or more tasks, right‑click and choose **Duplicate** to quickly create timestamped copies.
-- <span class="fluent-icon fluent-icon--delete" aria-hidden="true"></span> **Batch Delete**: Hold `Ctrl` or `Shift` to select multiple rows, then right‑click and choose **Delete**.
+- <span class="fluent-icon fluent-icon--copy" aria-hidden="true"></span> **Duplicate**: Select a task, right‑click and choose **Duplicate** to quickly create a timestamped copy.
+- **Batch Move or Delete**: Check the selection boxes at the start of each row, then use the batch toolbar that appears at the top of the list to move tasks to another group, or delete all selected tasks at once.
 - <span class="fluent-icon fluent-icon--share" aria-hidden="true"></span> **Share Rule**: Select a task, right‑click, and export a `.etrule` file.
 - <span class="fluent-icon fluent-icon--sync" aria-hidden="true"></span> **Refresh**: Reload the task list from the database.
-- <span class="fluent-icon fluent-icon--sort" aria-hidden="true"></span> **Toggle ID Display**: Click the sort icon next to **Task List** to switch between database IDs and sequential order numbers.
 
 ### Adjusting Execution Order
 
 Drag task rows to reorder them; the new order is saved immediately. Tasks use the saved order when executed as a group. This is sequential ordering only — task dependencies are not created.
+
+New tasks are added to the end of the current list. Execution order follows the saved drag-sorted order.
 
 If multiple tasks match the same file, order directly affects the outcome. For example, after the first task moves a file, subsequent tasks may no longer find it. It is recommended to make rules mutually exclusive, or verify the entire flow with Copy first.
 
@@ -171,10 +187,12 @@ The group selector at the top of the page allows you to:
 - Filter tasks by the current group.
 - Click <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **Execute Group** to run all enabled tasks in that group in order.
 - Set a group as the default display group.
-- Rename or delete groups in the group dropdown list.
+- Click **Group Management** to add, rename, or delete custom groups in a single dialog.
 
-::::caution[Deleting a group deletes its tasks]
-When a group is deleted, all tasks in that group are also removed, and their file‑monitoring configurations are released. To only stop execution temporarily, disable the tasks or pause automation instead of deleting the group.
+**"All Groups"** and **"Unassigned"** are built-in items that are always present and cannot be renamed or deleted. **"All Groups"** is used to view all tasks. New tasks that are not assigned a custom group go into **"Unassigned"**.
+
+::::note[Deleting a group does not delete its tasks]
+When a custom group is deleted, tasks within it are automatically moved to **"Unassigned"**. Task definitions and their configurations remain intact. Batch task deletion is a separate operation — always double-check the selected count in the confirmation dialog.
 ::::
 
 Group execution runs normal tasks first, then AI Classification tasks that require plan previews, one by one. Verify each task individually before batch execution, especially whether the output of an earlier task becomes the input of a later one.

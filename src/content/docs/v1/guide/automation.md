@@ -38,6 +38,44 @@ Set the task to execute automatically once when EasyTidy starts.
 ![exits or the system shuts down](/images/PixPin_2025-02-24_13-55-34.png)
 Configure EasyTidy to automatically run specified tasks when the program exits or the system shuts down. (Not guaranteed to run properly on all systems)
 
+## CRON Expression Examples
+
+```bash
+
+*/5 * * * * ?  Every 5 seconds
+0 */1 * * * ?  Every 1 minute
+0 0 23 * * ?   Every day at 23:00
+0 0 1 * * ?    Every day at 01:00
+0 0 1 1 * ?    The first day of every month at 01:00
+0 0 23 L * ?   The last day of every month at 23:00
+0 0 1 ? * L    Every Sunday at 01:00
+0 26,29,33 * * * ?  At 26, 29, and 33 minutes past the hour
+0 0 0,13,18,21 * * ?  Every day at 00:00, 13:00, 18:00, and 21:00
+```
+
+## CRON Expression Field Reference
+
+| Field Name        | Allowed Values          | Allowed Special Characters |
+|-------------------|-------------------------|----------------------------|
+| Seconds           | 0-59                    | , - * /                    |
+| Minutes           | 0-59                    | , - * /                    |
+| Hours             | 0-23                    | , - * /                    |
+| Day of Month      | 1-31                    | , - * ? / L W C            |
+| Month             | 1-12 or JAN-DEC         | , - * /                    |
+| Day of Week       | 1-7 or SUN-SAT          | , - * ? / L C #            |
+| Year (optional)   | empty or 1970-2099      | , - * /                    |
+
+## CRON Symbol Reference
+
+- `*`: Represents "every" or "all values" for the field.
+- `/`: Specifies increments. `0/15` means every 15 minutes starting at minute 0; `3/20` means every 20 minutes starting at minute 3.
+- `?`: Used in the day-of-month and day-of-week fields to indicate "no specific value." These two fields are mutually exclusive — when one has a specific value, the other should use `?`.
+- `,`: Specifies a list of values, e.g. `MON,WED,FRI`.
+- `-`: Specifies a range of values, e.g. `MON-FRI`.
+- `L`: Stands for "last." In the day-of-month field it means the last day of the month; in the day-of-week field (e.g. `6L` or `FRIL`) it means the last Friday of the month.
+- `W`: Specifies the nearest weekday to the given day. `15W` in the day-of-month field means "the nearest weekday to the 15th of the month."
+- `#`: Specifies the nth occurrence of a day of the week in a month. `6#3` or `FRI#3` means "the third Friday of the month."
+
 ## Global Automation Analysis
 
 ![Global Settings](/images/PixPin_2025-01-08_15-01-18.png)  
