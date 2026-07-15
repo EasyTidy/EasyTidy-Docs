@@ -10,7 +10,7 @@ description: 在 EasyTidy Pro 中创建、预览、执行和管理文件整理�
 :::
 
 <!-- 图片要求：完整展示“文件整理 → 整理任务”页面，包含顶部导入/导出/新建任务区域、分组选择器、任务表格及每行的编辑/删除/运行按钮。建议使用 16:9 横图，窗口宽度至少 1200 px；放入 3～5 条使用测试路径的示例任务，不出现真实用户名、手机号、服务器地址等隐私信息。 -->
-![整理任务页面总览（图片占位）](/images/zh/task-page-overview-placeholder.png)
+![整理任务页面总览](/images/zh/task-page-overview.png)
 
 ## 快速开始
 
@@ -25,7 +25,7 @@ description: 在 EasyTidy Pro 中创建、预览、执行和管理文件整理�
 7. 确认匹配数量和操作方式后执行。执行完成后，可按提示配置自动运行。
 
 <!-- 图片要求：展示“快速创建任务”对话框的完整三步区域：选择来源、选择整理结果、确认任务。源目录使用 Windows 下载目录别名或测试目录，目标目录使用独立测试目录；突出“创建并预览”按钮。建议使用竖向长图或两张上下拼接图，文字需清晰。 -->
-![快速创建任务（图片占位）](/images/zh/task-quick-create-placeholder.png)
+![快速创建任务](/images/zh/task-quick-create.png)
 
 快速创建只提供移动和复制。需要重命名、压缩、标签、去重、AI、加密、云端传输等能力时，请使用 <span class="fluent-icon fluent-icon--task-add" aria-hidden="true"></span> **直接创建**。
 
