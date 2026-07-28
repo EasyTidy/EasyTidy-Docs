@@ -7,7 +7,7 @@ description: 安装和使用智能文件识别、内容提取、文档加密与�
 
 前往 **设置 → 可选组件** 可以查看安装状态。点击组件右侧的 <span class="fluent-icon fluent-icon--download" aria-hidden="true"></span> **下载并启用** 后，程序会从官方发布源下载安装包，校验 ZIP 格式并解压到应用目录的 `libs` 文件夹。
 
-![可选组件页面与安装状态（图片占位）](/images/zh/components-overview-placeholder.png)
+![可选组件页面与安装状态](/images/zh/components-overview.png)
 
 :::note
 组件文件会在应用启动时加载。下载完成后如果相关功能仍提示未安装，请完全退出并重新启动 EasyTidy Pro。

@@ -5,7 +5,7 @@ description: 配置 WebDAV、S3 兼容存储、百度网盘和 123 云盘，并�
 
 EasyTidy Pro 可以把云端存储作为整理任务的目标或来源，也可以将部分存储挂载为 Windows 盘符。所有入口均位于 **集成** 页面；配置完成后，在新建或编辑规则时选择 **云存储传输** 即可使用。
 
-![云存储集成页面概览（图片占位）](/images/zh/cloud-storage-integrations-overview-placeholder.png)
+![云存储集成页面概览](/images/zh/cloud-storage-integrations-overview.png)
 
 ## 支持范围
 
@@ -29,7 +29,7 @@ WebDAV 分为两个用途：
 
 添加文件整理账号时，需要填写服务器 URL、端口、用户名、密码和远程路径。URL 必须以 `http://` 或 `https://` 开头；远程路径建议使用以 `/` 开头的目录，例如 `/EasyTidyPro_UploadFiles`。
 
-![WebDAV 上传账号配置（图片占位）](/images/zh/cloud-storage-webdav-account-placeholder.png)
+![WebDAV 上传账号配置](/images/zh/cloud-storage-webdav-account.png)
 
 如果同一服务用于整理上传和应用备份，仍建议为两种用途设置不同的远程目录，避免普通文件与备份包混在一起。
 

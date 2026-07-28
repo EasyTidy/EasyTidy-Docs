@@ -12,9 +12,9 @@
     "compress:images": "node scripts/compress-images.mjs"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.1.4",
+    "@astrojs/cloudflare": "^14.1.5",
     "@astrojs/sitemap": "^3.7.3",
-    "@astrojs/starlight": "^0.41.4",
+    "@astrojs/starlight": "^0.41.5",
     "@astrojs/starlight-tailwind": "^5.0.0",
     "@tailwindcss/vite": "^4.3.2",
     "astro": "^7.1.3",

@@ -23,7 +23,7 @@ description: 使用本地目录或 WebDAV 备份 EasyTidy Pro 配置，并在需
 - **上次备份**：显示最近一次成功备份的位置。
 
 <!-- 图片要求：完整截取“设置 → 常规设置 → 备份与恢复”展开后的卡片，必须清楚显示备份、还原、自动备份、备份方式、备份目录及该行右侧的打开/选择目录按钮、备份间隔、最大保留版本数和上次备份。建议使用横向截图，并隐藏真实用户名和私人路径。 -->
-![备份与恢复设置界面（图片占位）](/images/zh/backup-settings-overview-placeholder.png)
+![备份与恢复设置界面](/images/zh/backup-settings-overview.png)
 
 ## 第一次使用：创建本地备份
 
@@ -40,7 +40,7 @@ description: 使用本地目录或 WebDAV 备份 EasyTidy Pro 配置，并在需
 建议把备份目录放在不同于系统盘的位置，例如另一块硬盘、NAS 同步目录或受信任的云盘同步文件夹。只把备份放在系统盘，无法应对系统盘损坏或重装时格式化磁盘的情况。
 
 <!-- 图片要求：展示本地备份模式下选择备份目录的界面，突出“本地”下拉框、文件夹按钮和选择后的备份目录；路径中的用户名需打码。 -->
-![选择本地备份目录（图片占位）](/images/zh/backup-local-directory-placeholder.png)
+![选择本地备份目录](/images/zh/backup-local-directory.webp)
 
 ## 设置自动备份
 
@@ -74,7 +74,7 @@ WebDAV 可以把备份保存到支持 WebDAV 的网盘、NAS 或自建服务器�
 如果已经配置了用于文件上传的 WebDAV 账户，可以在 WebDAV 集成页面选择将同一账户同时用于应用备份；也可以为备份单独设置一个账户或目录。
 
 <!-- 图片要求：截取“集成设置 → WebDAV”中的应用备份账户区域，清楚显示服务器地址、端口、用户名、密码、远端目录、测试连接和保存按钮；所有真实账号、地址和密码必须使用示例内容或完全打码。 -->
-![配置 WebDAV 备份账户（图片占位）](/images/zh/backup-webdav-account-placeholder.png)
+![配置 WebDAV 备份账户](/images/zh/backup-webdav-account.png)
 
 ### 创建 WebDAV 备份
 

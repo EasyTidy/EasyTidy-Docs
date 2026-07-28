@@ -10,7 +10,7 @@ EasyTidy Pro 的快捷键分为两类：可以在设置页修改的 **全局快�
 打开 EasyTidy Pro，进入 **设置 → 快捷键** 即可查看和修改快捷键。
 
 <!-- 图片要求：截取完整的快捷键设置页，至少显示“显示主窗口”“拖放窗口”“设置窗口”“执行任务”“手机传输”“退出应用”和底部“重置全部”；隐藏无关桌面内容。 -->
-![快捷键设置页面（图片占位）](/images/zh/shortcut-settings-placeholder.png)
+![快捷键设置页面](/images/zh/shortcut-settings.png)
 
 ## 默认快捷键
 
@@ -71,7 +71,7 @@ EasyTidy Pro 的快捷键分为两类：可以在设置页修改的 **全局快�
 4. 点击 <span class="fluent-icon fluent-icon--save" aria-hidden="true"></span> **保存**。配置会立即保存并尝试注册，不需要重启应用。
 
 <!-- 图片要求：截取“设置快捷键”对话框，显示大号按键预览、输入提示以及保存、重置、取消三个按钮；推荐使用一个有效的组合键示例。 -->
-![设置快捷键对话框（图片占位）](/images/zh/shortcut-edit-dialog-placeholder.png)
+![设置快捷键对话框（图片占位）](/images/zh/shortcut-edit-dialog.png)
 
 ### 支持的组合方式
 
@@ -95,7 +95,7 @@ EasyTidy Pro 的快捷键分为两类：可以在设置页修改的 **全局快�
 系统保留或应用内重复的组合不能正常保存。检测到其他程序可能占用时，对话框会显示警告；最终能否使用以 Windows 实际注册结果为准，注册失败后页面顶部会显示状态信息。
 
 <!-- 图片要求：截取快捷键对话框中的黄色“可能被占用”或 AltGr 警告；另准备一张页面顶部注册失败 InfoBar，二者可合并为一张标注图。 -->
-![快捷键冲突与注册状态（图片占位）](/images/zh/shortcut-conflict-placeholder.png)
+![快捷键冲突与注册状态](/images/zh/shortcut-conflict.png)
 
 :::tip[选择组合键的建议]
 优先使用两个修饰键加一个字母，例如 `Ctrl + Shift + K`。尽量避开 Windows、输入法、截图工具、显卡控制面板、远程桌面和游戏工具常用的组合。

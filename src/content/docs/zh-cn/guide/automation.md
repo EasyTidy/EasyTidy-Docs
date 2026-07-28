@@ -9,7 +9,7 @@ description: 为 EasyTidy Pro 整理任务配置文件变更、启动、定期�
 本页只介绍 **自动运行** 页面中的整理任务触发器，不包含高级流程编辑器里的来源监控、轮询和计划配置。高级流程的自动化应单独配置和说明。
 :::
 
-![自动运行四步配置向导（图片占位）](/images/zh/automation-wizard-placeholder.png)
+![自动运行四步配置向导](/images/zh/automation-wizard.png)
 
 ## 使用前准备
 
@@ -250,7 +250,7 @@ EasyTidy Pro 的计划使用 Quartz 六字段格式，第一位是“秒”。Li
 EasyTidy Pro 在后台运行时会保留系统托盘图标。单击图标会打开 **快速整理浮窗**；右键图标可以控制自动任务、打开窗口或退出应用。
 
 <!-- 图片要求：截取 Windows 系统托盘中的 EasyTidy Pro 右键菜单，完整显示立即整理、快速整理浮窗、显示窗口、暂停/恢复、全局快捷键、设置和退出。 -->
-![EasyTidy Pro 系统托盘菜单（图片占位）](/images/zh/tray-menu-placeholder.png)
+![EasyTidy Pro 系统托盘菜单](/images/zh/tray-menu.png)
 
 托盘菜单包含以下命令：
 

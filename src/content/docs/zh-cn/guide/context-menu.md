@@ -17,7 +17,7 @@ Windows 右键菜单可以把文件资源管理器中选中的文件或文件夹
 4. Windows 显示用户账户控制提示时，确认本次安装操作。
 
 <!-- 图片要求：截取“常规设置 → 应用设置 → 右键菜单”卡片，完整显示样式下拉框、注册和卸载按钮。 -->
-![右键菜单设置（图片占位）](/images/zh/context-menu-settings-placeholder.png)
+![右键菜单设置](/images/zh/context-menu-settings.png)
 
 ### 经典菜单
 
@@ -43,7 +43,7 @@ Windows 右键菜单可以把文件资源管理器中选中的文件或文件夹
 4. 应用把每个路径交给默认任务分组，按规则自动分流。
 
 <!-- 图片要求：分别准备 Windows 11 新版右键菜单和“显示更多选项”中的经典菜单截图；正文占位图可先使用拼图，需清楚标出 EasyTidy Pro 菜单项。 -->
-![Windows 文件右键菜单（图片占位）](/images/zh/context-menu-explorer-placeholder.png)
+![Windows 文件右键菜单](/images/zh/context-menu-explorer.png)
 
 默认分组的执行顺序与拖拽整理一致：
 

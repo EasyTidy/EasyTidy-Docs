@@ -7,7 +7,7 @@ EasyTidy Pro 的设置按用途分成语言、常规、快捷键、主题、更�
 
 本页适合用来快速判断“应该去哪里修改”。简单选项会在这里直接说明；需要填写较多参数或涉及数据迁移的功能，会提供对应的详细指南。
 
-![设置首页（图片占位）](/images/zh/settings-overview-placeholder.png)
+![设置首页](/images/zh/settings-overview.png)
 
 ## 应用程序语言
 
