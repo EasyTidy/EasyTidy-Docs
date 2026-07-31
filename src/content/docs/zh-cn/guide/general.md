@@ -7,7 +7,7 @@ description: 配置 EasyTidy Pro 的文件处理、应用行为、备份、撤�
 
 打开 EasyTidy Pro，进入 **设置 → 常规设置** 即可查看本页选项。大部分设置会立即保存；需要重启才能生效的选项，应用会主动提示。
 
-![常规设置页面概览（图片占位）](/images/zh/general-settings-placeholder.png)
+![常规设置页面概览](/images/zh/general-settings.png)
 
 ## 文件处理
 
@@ -90,7 +90,7 @@ description: 配置 EasyTidy Pro 的文件处理、应用行为、备份、撤�
 
 你可以将 EasyTidy Pro 注册到 Windows 文件右键菜单，并选择经典或新版菜单样式。右键整理不会打开任务选择窗口，而是使用默认任务分组静默处理文件。安装方式、默认分组要求和故障排查请参阅[Windows 右键菜单](/zh-cn/guide/context-menu/)。
 
-![应用设置与右键菜单（图片占位）](/images/zh/general-settings-placeholder.png)
+![应用设置与右键菜单](/images/zh/general-settings-menu.png)
 
 ## 备份与恢复
 
@@ -119,7 +119,7 @@ description: 配置 EasyTidy Pro 的文件处理、应用行为、备份、撤�
 
 首次同步前建议先创建备份，并确认冲突策略符合你的预期。
 
-![标签同步设置（图片占位）](/images/zh/general-settings-placeholder.png)
+![标签同步设置](/images/zh/general-settings-tags.png)
 
 ## 撤销设置
 
@@ -152,4 +152,4 @@ description: 配置 EasyTidy Pro 的文件处理、应用行为、备份、撤�
 
 便携模式需要程序目录持续可写。不建议在受企业策略限制的目录中使用，也不要在应用运行时手动移动或删除便携配置目录。
 
-![便携配置切换对话框（图片占位）](/images/zh/general-settings-placeholder.png)
+![便携配置切换对话框](/images/zh/general-settings-switch.png)

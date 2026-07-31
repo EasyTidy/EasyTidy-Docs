@@ -40,7 +40,7 @@ WebDAV 分为两个用途：
 3. 可立即执行备份，也可启用自动备份并设置间隔和最大保留数量。
 4. 恢复时，程序会按时间列出远端可用备份；选择版本后再执行恢复。
 
-![选择 WebDAV 备份版本（图片占位）](/images/zh/cloud-storage-webdav-restore-version-placeholder.png)
+![选择 WebDAV 备份版本](/images/zh/cloud-storage-webdav-restore-version.webp)
 
 恢复会覆盖当前应用数据。建议先创建一次本地备份，并确认远端备份的时间和来源。
 
@@ -63,7 +63,7 @@ S3 集成支持多个存储桶配置，可以设置默认项。当前提供以�
 
 请使用 S3 API Endpoint，不要填写对象存储控制台网址或公开下载域名。建议为凭据仅授予目标存储桶所需的列举、读取、写入和删除权限。
 
-![S3 存储桶配置（图片占位）](/images/zh/cloud-storage-s3-bucket-placeholder.png)
+![S3 存储桶配置](/images/zh/cloud-storage-s3-bucket.png)
 
 ## 百度网盘
 
@@ -71,7 +71,7 @@ S3 集成支持多个存储桶配置，可以设置默认项。当前提供以�
 
 授权令牌可能过期或被撤销。出现鉴权失败时，请先回到集成页面重新授权，再测试任务。
 
-![百度网盘账号授权与路径配置（图片占位）](/images/zh/cloud-storage-baidu-authorization-placeholder.png)
+![百度网盘账号授权与路径配置](/images/zh/cloud-storage-baidu-authorization.png)
 
 ## 123 云盘
 
@@ -87,7 +87,7 @@ S3 集成支持多个存储桶配置，可以设置默认项。当前提供以�
 4. 选择文件冲突策略，保存配置；存在多个账号时，可指定默认项。
 5. 创建整理规则，选择 **云存储传输 → 123 云盘**，再选择对应配置。
 
-![123 云盘 Client ID 与 Client Secret 配置（图片占位）](/images/zh/cloud-storage-pan123-key-placeholder.png)
+![123 云盘 Client ID 与 Client Secret 配置](/images/zh/cloud-storage-pan123-key.png)
 
 路径前缀为空时，程序使用默认目录 `/EasyTidyPro_UploadFiles`。123 云盘目前不能挂载为 Windows 盘符，需要等待官方提供可用的 WebDAV 能力。
 
@@ -101,7 +101,7 @@ S3 集成支持多个存储桶配置，可以设置默认项。当前提供以�
 4. 按需填写任务路径前缀。任务中的路径会与集成配置的基础路径组合使用。
 5. 保存后先用少量测试文件运行，确认目录和冲突处理符合预期。
 
-![整理规则中的云存储传输配置（图片占位）](/images/zh/cloud-storage-rule-transfer-placeholder.png)
+![整理规则中的云存储传输配置](/images/zh/cloud-storage-rule-transfer.png)
 
 同一类型存在多个配置时，规则会记录所选配置；未明确选择时使用默认项。删除正在被规则引用的配置后，应重新编辑相关规则。
 
@@ -113,7 +113,7 @@ S3 集成支持多个存储桶配置，可以设置默认项。当前提供以�
 
 WebDAV 和 S3 配置可以挂载为 Windows 盘符。首次启用时，程序会准备 rclone 和 WinFsp 运行环境；完成后选择未占用的盘符即可。
 
-![云存储盘符挂载与缓存状态（图片占位）](/images/zh/cloud-storage-drive-mount-placeholder.png)
+![云存储盘符挂载与缓存状态](/images/zh/cloud-storage-drive-mount.webp)
 
 - 挂载依赖网络连接，云端文件的响应速度通常低于本地磁盘。
 - 挂载会使用本地缓存，可在集成页面查看或清理缓存。
