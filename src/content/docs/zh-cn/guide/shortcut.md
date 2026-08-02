@@ -71,7 +71,7 @@ EasyTidy Pro 的快捷键分为两类：可以在设置页修改的 **全局快�
 4. 点击 <span class="fluent-icon fluent-icon--save" aria-hidden="true"></span> **保存**。配置会立即保存并尝试注册，不需要重启应用。
 
 <!-- 图片要求：截取“设置快捷键”对话框，显示大号按键预览、输入提示以及保存、重置、取消三个按钮；推荐使用一个有效的组合键示例。 -->
-![设置快捷键对话框（图片占位）](/images/zh/shortcut-edit-dialog.png)
+![设置快捷键对话框](/images/zh/shortcut-edit-dialog.png)
 
 ### 支持的组合方式
 

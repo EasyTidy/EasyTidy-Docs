@@ -71,7 +71,7 @@ OCR 语言默认跟随 EasyTidy Pro 当前界面语言：
 内容提取组件会安装到当前应用目录的 `libs` 文件夹。标准安装版、便携版和不同开发目录彼此独立；切换实例后需要重新检查组件状态。
 
 <!-- 图片要求：展示“设置 → 可选组件”页面中的“内容提取”卡片，清楚显示功能说明、已安装状态或“下载并启用”按钮。截图不要包含安装目录中的真实用户名；建议使用 16:9 横图或页面局部横图。 -->
-![安装内容提取组件（图片占位）](/images/zh/ocr-content-component-placeholder.png)
+![安装内容提取组件](/images/zh/ocr-content-component.png)
 
 ### 安装 Tesseract OCR
 
@@ -95,7 +95,7 @@ tesseract --list-langs
 第一条命令应输出版本信息；第二条命令的列表中至少应包含当前需要的 `chi_sim` 或 `eng`。如果终端也提示找不到命令，应先修正安装目录和 `PATH`，再测试 EasyTidy Pro。
 
 <!-- 图片要求：展示新打开的 PowerShell 或命令提示符依次运行 `tesseract --version` 和 `tesseract --list-langs`，版本信息可见，语言列表至少包含 `chi_sim` 与 `eng`。截图前隐藏用户名、计算机名和私人目录，建议裁剪为紧凑横图。 -->
-![验证 Tesseract 与语言数据（图片占位）](/images/zh/ocr-tesseract-check-placeholder.png)
+![验证 Tesseract 与语言数据（图片占位）](/images/zh/ocr-tesseract-check.png)
 
 :::note[Tesseract 只影响本地 FFI OCR]
 未安装 Tesseract 时，普通数字文档仍可由内容提取组件直接解析；应用也可能继续使用已启用的 MinerU 或 Windows OCR 完成识别。若希望在不上传文件的情况下稳定处理图片和扫描 PDF，应同时准备内容提取组件、Tesseract 和对应语言数据。
@@ -118,7 +118,7 @@ MinerU 是可选的首选云端解析服务，适合扫描版 PDF、复杂排版
 进入 **集成设置 → MinerU 集成**。页面会显示当前模式、启用开关、API Token、解析模型、服务限制和 API 文档入口。
 
 <!-- 图片要求：完整展示“集成设置 → MinerU 集成”页面。需要清楚显示 OCR 调用优先级、启用开关、Token 输入框、解析模型、当前模式、保存按钮和服务限制；Token 必须留空或完全打码，不得展示真实账号信息。建议 16:9 横图，窗口宽度至少 1200 px。 -->
-![MinerU 集成设置（图片占位）](/images/zh/ocr-mineru-settings-placeholder.png)
+![MinerU 集成设置](/images/zh/ocr-mineru-settings.png)
 
 ### 2. 确认上传隐私
 
@@ -132,7 +132,7 @@ MinerU 是可选的首选云端解析服务，适合扫描版 PDF、复杂排版
 点击 **了解并启用** 才会允许云端解析；取消会关闭 MinerU。勾选“我已了解文件会被上传，不再提醒”后，后续启用时可能不再显示该确认。
 
 <!-- 图片要求：展示“启用 MinerU 云端 OCR？”隐私确认框，正文、“我已了解文件会被上传，不再提醒”复选框、“了解并启用”和取消按钮都需完整可见。背景使用测试界面，不能出现真实文档名、Token 或私人路径。 -->
-![MinerU 上传隐私确认（图片占位）](/images/zh/ocr-mineru-privacy-placeholder.png)
+![MinerU 上传隐私确认](/images/zh/ocr-mineru-privacy.png)
 
 :::caution[本地脱敏不能阻止 MinerU 上传原文件]
 结构化提取中的“发送给 AI 前脱敏”作用于后续发送给 LLM 的提取文本，不会在 MinerU OCR 之前修改原始文档。只要启用了 MinerU，需要 OCR 的完整文件就可能先上传到 MinerU。机密、受监管或不适合离开设备的文件应关闭 MinerU。
@@ -180,7 +180,7 @@ OCR 不需要在每条任务中单独打开。只要任务需要读取文档内�
 扫描图片或扫描 PDF 会在内容提取时自动进入 OCR。部分高级条件评估会跳过大于 10 MB 的文件；大量大文件应先缩小测试范围，或改用更明确的文件名、大小和类型条件预筛选。
 
 <!-- 图片要求：展示任务或高级流程中的“文件内容”筛选条件。使用测试扫描 PDF，匹配词设为虚构内容（例如“测试合同编号”），并让匹配方式、大小写设置和内容提取组件状态可见。不得展示真实合同或识别正文。 -->
-![文件内容 OCR 筛选条件（图片占位）](/images/zh/ocr-file-content-filter-placeholder.png)
+![文件内容 OCR 筛选条件](/images/zh/ocr-file-content-filter.png)
 
 ### AI 总结
 
@@ -209,7 +209,7 @@ OCR 与 LLM 是两个不同的数据处理阶段。启用 MinerU 时，原文件
 结构化数据并非只靠 OCR 完成：OCR 负责得到文本，默认 LLM 再根据字段要求生成结构化结果。没有默认 LLM、OCR/提取内容为空或模型返回格式不正确时，可能不会生成有效输出。
 
 <!-- 图片要求：展示“提取结构化数据”任务配置，提取字段使用虚构的“客户姓名、订单号、金额、签订日期”，输出格式选择 JSON 或 Excel，源目录和输出目录均使用测试路径；如果显示脱敏选项，也应一并截入。建议 4:3 横图。 -->
-![OCR 结构化数据提取任务（图片占位）](/images/zh/ocr-structured-extraction-placeholder.png)
+![OCR 结构化数据提取任务](/images/zh/ocr-structured-extraction.png)
 
 ## 验证识别效果
 

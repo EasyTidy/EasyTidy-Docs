@@ -104,7 +104,7 @@ WebDAV 可以把备份保存到支持 WebDAV 的网盘、NAS 或自建服务器�
 不要在还原过程中强制关闭应用或删除备份文件。重启后，请检查重要任务、规则、路径和自动运行设置是否符合预期。
 
 <!-- 图片要求：展示本地还原的文件选择窗口，列表中放置多个示例 EasyTidyPro_Backup_时间.zip 文件，并突出选中的备份；不得显示真实用户目录或其他私人文件。 -->
-![选择本地备份进行还原（图片占位）](/images/zh/backup-local-restore.webp)
+![选择本地备份进行还原](/images/zh/backup-local-restore.webp)
 
 ## 从 WebDAV 备份还原
 

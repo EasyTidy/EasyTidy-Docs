@@ -48,7 +48,7 @@ Magika 识别的是文件内容，但损坏、被加密或样本过短的文件�
 - 从 PDF、Word、Excel 和图片（OCR）等文件中提取文本；
 - 需要文档内容的 Excel 导出功能。
 
-![内容提取条件与设置（图片占位）](/images/zh/components-content-extraction-placeholder.png)
+![内容提取条件与设置](/images/zh/components-content-extraction.png)
 
 在规则编辑器中选择需要内容提取的条件时，如果组件缺失，页面会提供下载提示。部分批量操作也会在执行前询问是否立即下载并启用。
 
@@ -67,7 +67,7 @@ Magika 识别的是文件内容，但损坏、被加密或样本过短的文件�
 
 创建整理任务时选择 **加密文件** 或 **解密文件**，再选择 Office/PDF 密码保护方案并填写密码及输出设置。使用该方案但组件未安装时，任务编辑器会提示前往可选组件页面安装。
 
-![PDF 与 Office 文档加密任务配置（图片占位）](/images/zh/components-document-crypto-placeholder.png)
+![PDF 与 Office 文档加密任务配置](/images/zh/components-document-crypto.png)
 
 该组件不是对任意文件进行加密的通用方案，也不负责压缩包密码；压缩包加密与解密属于压缩/解压功能。解除 Office 或 PDF 密码保护时必须提供正确密码。对于重要文件，建议先复制样本测试，并确认输出文件可以正常打开后再批量处理。
 
@@ -93,7 +93,7 @@ EasyTidy Pro 无法找回遗失的文档密码。不要把唯一一份文件直�
 | PDF | JPG、PNG、BMP、GIF、Markdown |
 | HTML | PDF、Markdown |
 
-![文件格式转换任务的源格式与目标格式（图片占位）](/images/zh/components-format-converter-placeholder.png)
+![文件格式转换任务的源格式与目标格式](/images/zh/components-format-converter.png)
 
 :::note
 转换组件已经内嵌 `libheif`、`libde265` 和 AOM 对应的 HEIC/HEIF 解码器，通常不依赖额外软件即可读取这些图片。组件只包含解码路径，不包含 HEVC 编码器。

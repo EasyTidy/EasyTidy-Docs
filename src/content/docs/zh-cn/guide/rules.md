@@ -8,7 +8,7 @@ description: 学习 EasyTidy Pro 的文件匹配、高级筛选、重命名模�
 首次创建规则时，建议使用少量测试文件，并先查看预览结果。确认源文件、目标位置和操作方式无误后，再用于真实目录或自动运行。
 
 <!-- 图片要求：完整展示“新建整理任务”窗口，包含任务名称、源目录、文件匹配规则、操作方式和目标目录。建议使用 16:9 横图，界面文字清晰，不包含真实用户名或隐私路径。 -->
-![新建整理任务界面（图片占位）](/images/zh/rules-task-editor-placeholder.png)
+![新建整理任务界面](/images/zh/rules-task-editor.png)
 
 ## 创建一条整理规则
 
@@ -44,7 +44,7 @@ description: 学习 EasyTidy Pro 的文件匹配、高级筛选、重命名模�
 多个基础条件之间表示“匹配其中任意一个”。输入规则后，可以使用规则输入框旁的预设按钮快速选择常见文档、图片、压缩包等组合。
 
 <!-- 图片要求：截取文件匹配规则输入框及其预设规则弹出面板，突出预设按钮和已选规则；使用紧凑横图。 -->
-![文件匹配预设面板（图片占位）](/images/zh/rules-pattern-picker-placeholder.png)
+![文件匹配预设面板](/images/zh/rules-pattern-picker.png)
 
 ### 正则表达式
 
@@ -88,7 +88,7 @@ description: 学习 EasyTidy Pro 的文件匹配、高级筛选、重命名模�
 条件越多，越应该通过预览核对实际命中文件。高级筛选的完整界面和条件说明请参阅[筛选条件](/zh-cn/guide/filter/)。
 
 <!-- 图片要求：截取高级筛选编辑器顶部，完整展示“条件满足方式”下拉框及四个中文选项；不要出现枚举英文名或调试信息。 -->
-![高级筛选的条件满足方式（图片占位）](/images/zh/rules-filter-mode-placeholder.png)
+![高级筛选的条件满足方式](/images/zh/filter-match-mode.png)
 
 ## 高级流程中的条件判断
 
@@ -108,7 +108,7 @@ description: 学习 EasyTidy Pro 的文件匹配、高级筛选、重命名模�
 不同字段可用的判断方式可能不同，应以当前下拉列表为准。多个条件之间的关系通过条件组界面选择，不要在输入值中手动拼接程序内部名称。
 
 <!-- 图片要求：展示高级流程条件编辑器的一行完整条件，包含字段下拉框、中文判断方式下拉框和值输入框；判断方式下拉需展开并清楚显示“是、不是、包含、不包含、正则匹配、空名称”。 -->
-![高级流程条件判断选项（图片占位）](/images/zh/rules-workflow-condition-placeholder.png)
+![高级流程条件判断选项](/images/zh/rules-workflow-condition.png)
 
 ## 重命名模板
 
@@ -171,10 +171,10 @@ ${parent}-${increment=1,padding=4,start=1}
 8. 在预览中确认只包含测试文件、操作为“复制”、目标路径正确，然后确认执行。
 
 <!-- 图片要求：组合展示“更多菜单中的导入规则”与“导入后任务列表中的 PDF 归档示例”两个状态；可使用左右拼图，并用标注框突出菜单项和任务行。 -->
-![导入示例规则（图片占位）](/images/zh/rules-import-example-placeholder.png)
+![导入示例规则](/images/zh/rules-import-example.png)
 
 <!-- 图片要求：展示执行一次后的预览窗口，清楚显示源文件、复制操作和目标路径；所有真实用户名及无关文件名需打码。 -->
-![示例规则执行预览（图片占位）](/images/zh/rules-example-preview-placeholder.png)
+![示例规则执行预览](/images/zh/task-preview-result.png)
 
 ## 导出和分享自己的规则
 

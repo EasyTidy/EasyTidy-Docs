@@ -25,7 +25,7 @@ EasyTidy Pro 提供两种拖入文件的入口：拖动文件时自动出现的 
 如果松开鼠标时没有把文件放入浮窗，临时浮窗会自动隐藏，不会移动或修改文件。
 
 <!-- 图片要求：截取 Windows 文件资源管理器正在拖动多个文件、自动拖拽浮窗已经出现的场景；需同时看清拖动缩略图与浮窗，隐藏个人路径。 -->
-![Pro 自动拖拽浮窗（图片占位）](/images/zh/drag-auto-popup-placeholder.png)
+![Pro 自动拖拽浮窗](/images/zh/drag-auto-popup-placeholder.webp)
 
 ## 使用快速整理浮窗
 
