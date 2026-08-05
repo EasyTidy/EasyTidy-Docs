@@ -85,7 +85,7 @@ In the "Condition Satisfaction Mode" at the top of the rule editor, you can choo
 
 The more conditions you add, the more important it is to verify actual matched files through the preview. For the full advanced filter interface and condition descriptions, see [Filter Conditions](/guide/filter/).
 
-![Advanced filter condition satisfaction mode](/images/zh/rules-filter-mode.png)
+![Advanced filter condition satisfaction mode](/images/zh/filter-match-mode.png)
 
 ## Conditions in Advanced Workflows
 

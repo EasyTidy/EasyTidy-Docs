@@ -40,7 +40,7 @@ Local backup is the easiest to start with. Create one first and confirm the file
 Store the backup directory on a location other than the system drive — for example, another hard drive, a NAS sync folder, or a trusted cloud drive sync folder. Placing backups only on the system drive leaves you vulnerable to drive failure or formatting during a reinstall.
 
 <!-- Image: Show the local backup directory selection interface, highlighting the "Local" dropdown, the folder button, and the selected backup directory. Usernames in paths should be masked. -->
-![Select local backup directory](/images/zh/backup-local-directory.png)
+![Select local backup directory](/images/zh/backup-local-directory.webp)
 
 ## Setting Up Auto Backup
 
@@ -104,7 +104,7 @@ Restoring replaces the current configuration with the content from the backup. B
 Do not forcefully close the app or delete backup files during the restore process. After restart, verify that important tasks, rules, paths, and auto-run settings are as expected.
 
 <!-- Image: Show the local restore file selection window with several sample EasyTidyPro_Backup_timestamp.zip files and the selected backup highlighted. Do not show real user directories or other private files. -->
-![Select local backup to restore](/images/zh/backup-local-restore.png)
+![Select local backup to restore](/images/zh/backup-local-restore.webp)
 
 ## Restoring from a WebDAV Backup
 

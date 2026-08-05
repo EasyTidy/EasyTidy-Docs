@@ -25,7 +25,7 @@ Turning off the Pro auto drag popup only closes the Pro automatic entry. It does
 If you release the mouse without dropping on the popup, the temporary popup hides automatically without moving or modifying any files.
 
 <!-- Screenshot: Windows File Explorer dragging multiple files while the Pro auto drag popup is visible. Both the drag thumbnail and the popup should be clearly seen. Hide personal paths. -->
-![Pro auto drag popup](/images/zh/drag-auto-popup.png)
+![Pro auto drag popup](/images/zh/drag-auto-popup-placeholder.webp)
 
 ## Quick-Organize Popup
 
@@ -102,7 +102,7 @@ The "Unassigned" entry under task sources corresponds to the built-in unassigned
 When a task group is selected, regular rules are evaluated by priority, fallback rules using `#` or `##` run last, and processing stops after one task successfully handles the item.
 
 <!-- Screenshot: The expanded organization target picker simultaneously showing "Recent", search box, task sources and groups. A Pro screenshot may additionally show workflow sources. -->
-![Organization target picker](/images/zh/file-organize-target-picker.png)
+![Organization target picker](/images/zh/file-organize-target-picker.webp)
 
 ### Remember & Organize Automatically
 

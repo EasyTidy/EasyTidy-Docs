@@ -216,7 +216,7 @@ When a custom group is deleted, tasks within it are automatically moved to **"Un
 Group execution runs normal tasks first, then AI Classification tasks that require plan previews, one by one. Verify each task individually before batch execution, especially whether the output of an earlier task becomes the input of a later one.
 
 <!-- Image requirements: Show the task list with multi‑select and the right‑click menu, where Refresh, Duplicate, Share Rule, Delete, and Undo should be visible. Use annotation arrows to point out the row drag‑and‑drop reordering area and the top "Execute Group" button. A side‑by‑side image is acceptable; task names and paths should use test data. -->
-![Task list batch operations and group execution](/images/zh/task-list-management.png)
+![Task list batch operations and group execution](/images/zh/task-list-management.webp)
 
 ## Import, Export & Sharing
 

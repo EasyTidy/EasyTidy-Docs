@@ -78,7 +78,7 @@ On the sending device, do either of the following:
 You will see the **File Upload Assistant**. If the browser reports it cannot connect, do not switch to mobile data; first confirm that both devices are still on the same local network.
 
 <!-- Image requirements: Show the "File Upload Assistant" initial page in a mobile browser, clearly showing the "Select Files" and "Upload Config" buttons. The browser address bar should use an example LAN address. Screenshots must not contain real Wi-Fi names, notifications, contacts, photo thumbnails, or device identifiers. Recommended 9:19.5 portrait. -->
-![Mobile File Upload Assistant](/images/zh/file-delivery-mobile-home.png)
+![Mobile File Upload Assistant](/images/zh/file-delivery-mobile-home.jpg)
 
 ### 5. Select and Upload Files
 
@@ -91,7 +91,7 @@ You will see the **File Upload Assistant**. If the browser reports it cannot con
 The page itself imposes no fixed limit on file count or request body size and writes to disk in a streaming fashion; the actual uploadable scale is still constrained by the sending device's browser memory, network stability, computer disk space, and file system limits. When transferring many or very large files, consider splitting into batches and keeping the browser in the foreground.
 
 <!-- Image requirements: Mobile portrait composite. Left side shows the stats card and file list with several selected test files; right side shows the upload progress view and success message. Use fictional file names like "sample_photo.jpg" and "test_document.pdf". Do not show real photo thumbnails. -->
-![File selection and upload progress](/images/zh/file-delivery-mobile-upload.png)
+![File selection and upload progress](/images/zh/file-delivery-mobile-upload.jpg)
 
 ### 6. Confirm Results on the Computer
 

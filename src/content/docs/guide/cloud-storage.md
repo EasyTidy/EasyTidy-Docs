@@ -40,7 +40,7 @@ Even if the same service is used for both organization uploads and app backups, 
 3. Run a backup immediately, or enable automatic backup with a custom interval and retention limit.
 4. When restoring, the app lists available backups on the remote by time; select a version and proceed.
 
-![Selecting a WebDAV backup version](/images/zh/cloud-storage-webdav-restore-version.png)
+![Selecting a WebDAV backup version](/images/zh/cloud-storage-webdav-restore-version.webp)
 
 Restoring overwrites the current application data. Consider creating a local backup first, and confirm the source and timestamp of the remote backup.
 
@@ -113,7 +113,7 @@ Each integration can set how to handle duplicate file names; when not set indivi
 
 WebDAV and S3 configurations can be mounted as Windows drive letters. On first use, the app prepares the rclone and WinFsp runtime environment; once ready, select an unused drive letter.
 
-![Cloud storage drive mount and cache status](/images/zh/cloud-storage-drive-mount.png)
+![Cloud storage drive mount and cache status](/images/zh/cloud-storage-drive-mount.webp)
 
 - Mounting depends on network connectivity; cloud file response times are generally lower than local disk.
 - Mounts use local caching; you can view or clear the cache on the Integrations page.

@@ -10,7 +10,7 @@ Tags are typically created in organization tasks or file editing dialogs. Synced
 ::::
 
 <!-- Image requirements: Full capture of the "Tag Center" page. Must show the top tag search, associated file search, refresh button, rotatable tag cloud on the left, and tag sync button at top-right. The tag cloud should include fictional tags like "Work, To Archive, Important, Images" with varying sizes. Recommended 16:9 landscape, window width at least 1200 px; no real file paths, accounts, or server info. -->
-![Tag Center page overview](/images/zh/tags-page-overview.png)
+![Tag Center page overview](/images/zh/tags-page-overview-placeholder.png)
 
 ## Adding Tags to Files
 
@@ -36,7 +36,7 @@ Available colors include None, Red, Yellow, Green, Blue, and Purple:
 - When old tasks or imported configurations have chosen restricted colors in the free edition, they fall back to None at runtime — the tag text is still retained.
 
 <!-- Image requirements: Show the tag operation area in "New Task" or "Edit Task." Operation set to "Add Tags," tag input filled with 2–3 fictional tags, color menu expanded with None, Red, Yellow, Green, Blue, Purple clearly visible, and PRO badges on Blue/Purple; also show file rules and a test source directory. Recommended 4:3 landscape. -->
-![Task add tags with color selection](/images/zh/tags-task-add.png)
+![Task add tags with color selection](/images/zh/tags-task-add-placeholder.png)
 
 For more on task creation, preview, and execution, see [Organization Tasks](/guide/task/).
 
@@ -51,7 +51,7 @@ To batch-remove tags, set the organization task operation to **Remove Tags**:
 The remove tags input is for selecting existing tags only — no color picker is shown. Before clearing all tags, test with a small number of files to confirm the rules and source location.
 
 <!-- Image requirements: Show "Remove Tags" task configuration. Operation is "Remove Tags," dropdown has "To Archive" and "Temporary" checked as fictional tags; no color picker visible alongside. Can compose as left-right pair with a "no tags selected = clear all" state, with text annotation explaining both outcomes. -->
-![Removing specific tags vs. clearing all tags](/images/zh/tags-task-remove.png)
+![Removing specific tags vs. clearing all tags](/images/zh/tags-task-remove-placeholder.png)
 
 ## Using the Tag Center
 
@@ -80,7 +80,7 @@ Each associated item provides the following actions:
 When the file associated with a record has been moved, renamed, or deleted, the list shows "Invalid path." You can use the tag restore feature to write tags back to the existing file, or ignore the record after confirming the file no longer exists.
 
 <!-- Image requirements: Tag "To Archive" selected. Show the right-side associated file list and the top "Filter Associated Files" input. List at least two existing test files and one fictional "Invalid path" record, with Edit Tags, Open File, Locate File, and Back buttons clearly visible. Recommended 16:9 landscape. -->
-![Tag associated files and action buttons](/images/zh/tags-related-files.png)
+![Tag associated files and action buttons](/images/zh/tags-related-files-placeholder.png)
 
 ### Editing Tags for a Single File
 
@@ -93,7 +93,7 @@ After clicking <span class="fluent-icon fluent-icon--edit" aria-hidden="true"></
 What you save here is a replacement, not an append: tags removed from the input are removed from the file, and newly entered tags are written to the file. Clearing the input and saving clears all tags from that file.
 
 <!-- Image requirements: Show the "Edit File Tags" dialog. Top file path uses a test path; tag input contains "Work,Important,To Archive"; color menu expanded; Save and Cancel buttons fully visible at the bottom. Recommended compact portrait; text must be legible. -->
-![Edit file tags dialog](/images/zh/tags-edit-dialog.png)
+![Edit file tags dialog](/images/zh/tags-edit-dialog-placeholder.png)
 
 ## Restoring File Tags via Drag-and-Drop
 
@@ -113,7 +113,7 @@ Dropping onto the "Work" tag node does not mean adding the "Work" tag to the fil
 When file content changes, the file identifier may also change, and the original mapping may no longer match. Do not rely on matching file names to judge results — check the actual tags after restoration.
 
 <!-- Image requirements: Show the process of dragging a test folder from Windows File Explorer onto a tag cloud node; the node should be in a clear drag-accept feedback state. Add a prominent annotation "Restores existing tags, not adds this tag," with a side-by-side restore completion notification or refreshed associated file list. No real personal directories. -->
-![Drag-and-drop tag restoration](/images/zh/tags-drag-restore.png)
+![Drag-and-drop tag restoration](/images/zh/tags-drag-restore-placeholder.png)
 
 ## How Tags Are Stored
 
@@ -155,7 +155,7 @@ The <span class="fluent-icon fluent-icon--sync" aria-hidden="true"></span> **Syn
 After syncing, the other device still needs to have the corresponding files and use tag restoration to write the mappings back to files. Syncing tag mappings is not a substitute for file sync, nor for database backups.
 
 <!-- Image requirements: Left-right composite. Left shows the sync button at the top-right of Tag Center and the "Open Sync Settings" menu. Right shows the Tag Sync, Auto-Sync, and Conflict Policy sections in "Settings → General Settings," including WebDAV/S3 provider, remote path, Push, Pull, interval, conflict policy, and a success log entry. All server addresses, accounts, and paths use fictional data. -->
-![Tag Sync entry and settings](/images/zh/tags-sync-settings.png)
+![Tag Sync entry and settings](/images/zh/tags-sync-settings-placeholder.png)
 
 For more complete details on General Settings, see [General Settings](/guide/general/).
 

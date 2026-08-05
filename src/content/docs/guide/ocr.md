@@ -232,7 +232,7 @@ Recommended sample coverage:
 - Searchable PDFs vs. pure scanned PDFs.
 
 <!-- Image requirements: Show the Running Logs for an OCR/content extraction test task. Keep only test file names, execution times, and success/fallback info; hide user directories, tokens, service response bodies, and any real document content. A composite of one success and one failure entry is fine. -->
-![OCR testing and Running Logs](/images/zh/ocr-run-log.png)
+![OCR testing and Running Logs](/images/zh/ocr-run-log-placeholder.png)
 
 ## File Size, Timeouts & Fallback
 
