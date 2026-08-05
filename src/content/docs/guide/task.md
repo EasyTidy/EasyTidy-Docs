@@ -10,7 +10,7 @@ Operations like move, rename, overwrite, delete, and decrypt directly modify fil
 ::::
 
 <!-- Image requirements: Fully capture the "File Organization → Organize Tasks" page, including the top import/export/new task area, group selector, task table, and edit/delete/run buttons per row. Use a 16:9 landscape shot at least 1200 px wide; include 3–5 example tasks with test paths, without real usernames, phone numbers, or server addresses. -->
-![Organize tasks page overview (image placeholder)](/images/en/task-page-overview-placeholder.png)
+![Organize tasks page overview](/images/zh/task-page-overview.png)
 
 ## Quick Start
 
@@ -25,7 +25,7 @@ When you only need a simple move or copy, start with Quick Create:
 7. After confirming the match count and operation, execute. Once completed, you can configure automatic execution as prompted.
 
 <!-- Image requirements: Show the Quick Create dialog with its three complete sections: Select Source, Choose Result, and Confirm Task. Use Windows download directory aliases or test directories for the source, and a separate test directory for the destination; highlight the "Create & Preview" button. A vertical tall image or two stacked images is recommended, with clear text. -->
-![Quick create task (image placeholder)](/images/en/task-quick-create-placeholder.png)
+![Quick create task](/images/zh/task-quick-create.png)
 
 Quick Create only offers Move and Copy. For rename, compress, tag, deduplication, AI, encryption, cloud transfer and other capabilities, use <span class="fluent-icon fluent-icon--task-add" aria-hidden="true"></span> **Direct Create**.
 
@@ -84,7 +84,7 @@ Regular file rules and folder rules cannot be mixed in the same task. Folder rul
 The **Smart Rule Assistant** in the editor can generate rules from natural language. The rule editor may also offer visual templates, text labels, and deep semantic understanding. Before using these features, check model, component, and Pro license status, and verify actual match results in the preview.
 
 <!-- Image requirements: Capture the upper half of the "New Task" dialog, showing task name, operation type, rule input, regex toggle, rule preset buttons, filter conditions, and "Smart Rule Assistant." Keep the operation dropdown expanded to show at least Basic Organization, Smart Processing, and Cleanup categories. Use a 4:3 landscape shot with test data. -->
-![Task name, operation, and rules (image placeholder)](/images/en/task-editor-rules-placeholder.png)
+![Task name, operation, and rules](/images/zh/task-editor-rules.png)
 
 ### 4. Set Source & Destination Locations
 
@@ -136,7 +136,7 @@ Expand **Advanced Options** to adjust the group again and use the following sett
 At minimum, fill in the task name, group, operation type, and matching rules before saving (AI Classification is the exception — its matching rules are handled by the system). After a normal task is saved, it defaults to manual‑only execution. The app will ask whether to go to **Automation** to add a trigger.
 
 <!-- Image requirements: Capture the lower half of the "New Task" dialog, showing source location, destination location, path alias button, "Preview Current Task," and the expanded Advanced Options (group, enable, desktop shortcut). Use mutually exclusive test directories for source and destination; two vertically stacked images are acceptable. -->
-![Source, destination, and advanced options (image placeholder)](/images/en/task-editor-paths-advanced-placeholder.png)
+![Source, destination, and advanced options](/images/zh/task-editor-paths-advanced.png)
 
 ## Preview & Manual Execution
 
@@ -158,11 +158,26 @@ After execution, the number of processed items is displayed. If the current oper
 Not all operations can be undone. If a file has been moved, renamed, or deleted again by another program, undo may also fail. Undo is not a substitute for backup.
 
 <!-- Image requirements: A side‑by‑side composite. Left side shows the dangerous‑operation preview confirmation dialog with match count, operation name, "Do not show dangerous operation preview again," and the execute button clearly visible. Right side shows the execution completion window with "Undo Last Operation." Use 3–5 fictitious files without real paths. -->
-![Task preview and execution result (image placeholder)](/images/en/task-preview-result-placeholder.png)
+![Task preview and execution result](/images/zh/task-preview-result.png)
 
 ## Managing the Task List
 
 The task table provides a checkbox at the beginning of each row and displays task name, source location, destination location, shortcut creation status, enabled state, and action buttons.
+
+In **All Groups** view, each task name is followed by a small grey group name with a folder icon, making it easy to distinguish tasks when viewing mixed groups. When you filter to a specific group, the group label automatically hides to avoid repetition on every row. Long group names are truncated with an ellipsis and don't take up extra column width.
+
+### Checkbox Selection & Batch Selection
+
+Each task row has a checkbox at the beginning. The following operations are available:
+
+- Click a row checkbox to select or deselect that individual task.
+- Click the header checkbox to toggle selection: one click selects all, a second click deselects all. When some rows are already selected and not all, the header checkbox enters an indeterminate (partially-filled) state.
+- Use the batch toolbar's <span class="fluent-icon fluent-icon--checkbox" aria-hidden="true"></span> **Invert Selection** button to swap the selection.
+- Press **Space** to toggle the currently focused row's checkbox.
+- Hold **Shift** and click to select a contiguous range of rows.
+- Press **Ctrl + A** to select all, or use **Arrow Keys + Space** to select one by one.
+- Selected rows are highlighted; when you right-click on a selected row, the context menu offers batch operations for the entire selection.
+- When you right-click on a row that isn't selected, the entire selection clears and only that row becomes selected — this prevents accidentally operating on previously selected rows.
 
 - <span class="fluent-icon fluent-icon--checkbox" aria-hidden="true"></span> **Enable/Disable**: Click the checkbox in the **Enabled** column directly.
 - <span class="fluent-icon fluent-icon--edit" aria-hidden="true"></span> **Edit**: Modify rules, paths, and operation parameters. After saving, associated file monitors refresh automatically — a restart is usually not needed.
@@ -188,6 +203,9 @@ The group selector at the top of the page allows you to:
 - Click <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **Execute Group** to run all enabled tasks in that group in order.
 - Set a group as the default display group.
 - Click **Group Management** to add, rename, or delete custom groups in a single dialog.
+ - **Create Group**: Type a name in the input field and press Enter to save — no need to click a separate "Create" button. New groups are placed at the end by default.
+ - **Reorder**: Each group has a drag handle on the left; drag to adjust the order and release to auto‑save. Both the organize task and advanced workflow group dropdowns follow this order.
+ - **Rename**: Group names are read‑only by default to prevent accidental edits. Click **Rename** to enter edit mode, press Enter or click **Save** to commit, or press `Esc` to cancel and restore.
 
 **"All Groups"** and **"Unassigned"** are built-in items that are always present and cannot be renamed or deleted. **"All Groups"** is used to view all tasks. New tasks that are not assigned a custom group go into **"Unassigned"**.
 
@@ -198,7 +216,7 @@ When a custom group is deleted, tasks within it are automatically moved to **"Un
 Group execution runs normal tasks first, then AI Classification tasks that require plan previews, one by one. Verify each task individually before batch execution, especially whether the output of an earlier task becomes the input of a later one.
 
 <!-- Image requirements: Show the task list with multi‑select and the right‑click menu, where Refresh, Duplicate, Share Rule, Delete, and Undo should be visible. Use annotation arrows to point out the row drag‑and‑drop reordering area and the top "Execute Group" button. A side‑by‑side image is acceptable; task names and paths should use test data. -->
-![Task list batch operations and group execution (image placeholder)](/images/en/task-list-management-placeholder.png)
+![Task list batch operations and group execution](/images/zh/task-list-management.png)
 
 ## Import, Export & Sharing
 

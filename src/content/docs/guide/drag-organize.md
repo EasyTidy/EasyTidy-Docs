@@ -25,7 +25,7 @@ Turning off the Pro auto drag popup only closes the Pro automatic entry. It does
 If you release the mouse without dropping on the popup, the temporary popup hides automatically without moving or modifying any files.
 
 <!-- Screenshot: Windows File Explorer dragging multiple files while the Pro auto drag popup is visible. Both the drag thumbnail and the popup should be clearly seen. Hide personal paths. -->
-![Pro auto drag popup (image placeholder)](/images/en/drag-auto-popup-placeholder.png)
+![Pro auto drag popup](/images/zh/drag-auto-popup.png)
 
 ## Quick-Organize Popup
 
@@ -40,29 +40,30 @@ Open via any of these methods:
 Once open, drag files or folders onto the round popup to enter the organization window. The popup itself does not modify files directly.
 
 <!-- Screenshot: The round quick-organize popup on the desktop, preferably with the first-use guide or drop hint visible. Do not confuse with the auto drag popup. -->
-![Quick-organize popup (image placeholder)](/images/en/quick-organize-popup-placeholder.png)
+![Quick-organize popup](/images/zh/quick-organize-popup.png)
 
 ### Managing the Quick-Organize Popup
 
-Right-click the quick-organize popup for these commands:
+Right-click the quick-organize popup for these commands (listed by frequency of use, from top to bottom):
 
+- **Show Main Window**: Open the EasyTidy Pro main interface;
+- **Organize Method…**: Quickly choose a different organization target directly from the popup, without opening the organization window first;
 - **Pin to Top / Unpin**: Control whether the popup stays above other windows;
 - **Lock Position / Unlock Position**: When locked, the popup cannot be dragged, avoiding accidental moves;
 - **Show Usage Guide**: Re-display the drag-in instructions for the popup;
-- **Show Main Window**: Open the EasyTidy Pro main interface;
 - **Close Window**: Close the current quick-organize popup.
 
 When the position is unlocked, hold the left mouse button to drag the popup. Double-clicking with the left mouse button also closes it.
 
 <!-- Screenshot: The quick-organize popup right-click menu, fully showing Pin to Top, Lock Position, Usage Guide, Show Main Window, and Close Window. -->
-![Quick-organize popup menu (image placeholder)](/images/en/quick-organize-popup-menu-placeholder.png)
+![Quick-organize popup menu](/images/zh/quick-organize-popup-menu.png)
 
 ## Organization Window
 
 After dropping files from either popup, the organization window lists the files pending processing in this batch and lets you choose the organization target. You can also continue dragging more files into the already-open organization window.
 
 <!-- Screenshot: The full organization window with the file area, target picker, "Remember this task choice", "Skip this window, organize automatically on drop", and the organize button at the bottom. -->
-![File organization window (image placeholder)](/images/en/file-organize-window-placeholder.png)
+![File organization window](/images/zh/file-organize-window.png)
 
 ### Inspecting Files to Organize
 
@@ -73,6 +74,14 @@ The organization window provides three display modes:
 - **Small Icons**: View filenames and sizes in a compact list.
 
 Clicking the display mode button in the top-right corner of the file area cycles through **Stacked → Large Icons → Small Icons → Stacked** in order — no menu expansion is needed. The button icon and hover tooltip indicate the current mode. The app remembers the last selection and continues using it the next time the organization window opens. When there are many files or you need to check failure reasons, switch to Large Icons or Small Icons mode.
+
+In Large Icons mode, file names display up to three lines; longer names are truncated. Hovering over a file shows the full file name and complete path.
+
+### Adjusting Window Size
+
+The organization window can be freely resized from the edges or the resize handle at the bottom-right corner, with a minimum size that preserves the layout. When the window is widened, Large Icons mode wraps files by item width, fitting more files per row without enlarging the icons themselves.
+
+The app remembers manually adjusted window dimensions and restores them on next open. Only normal window sizes are recorded — maximized state is not saved. When switching monitors or changing resolution, the window automatically snaps back into the visible area. The main window also supports remembering its size.
 
 Right-click in the file area to:
 
@@ -93,7 +102,7 @@ The "Unassigned" entry under task sources corresponds to the built-in unassigned
 When a task group is selected, regular rules are evaluated by priority, fallback rules using `#` or `##` run last, and processing stops after one task successfully handles the item.
 
 <!-- Screenshot: The expanded organization target picker simultaneously showing "Recent", search box, task sources and groups. A Pro screenshot may additionally show workflow sources. -->
-![Organization target picker (image placeholder)](/images/en/file-organize-target-picker-placeholder.png)
+![Organization target picker](/images/zh/file-organize-target-picker.png)
 
 ### Remember & Organize Automatically
 
@@ -114,8 +123,19 @@ When all items succeed, a completion screen appears with <span class="fluent-ico
 
 The completion screen begins an auto-close countdown. Hovering the mouse over the window pauses the countdown. After clicking confirm, the window clears the current batch results and returns to the initial state, ready for the next batch of files.
 
+## Temporarily Choose Organization Method
+
+If you want to override the default behavior during a drag, there are two ways to choose a different organization target without going into the full organization window:
+
+- **Via the quick-organize popup**: Right-click the quick-organize popup and select **Organize Method…** to pick a different **Task**, **Group**, **Workflow**, or **Workflow Group** (Pro). The next drag-and-drop will use this target and skip the organization window.
+- **During file dragging**: While dragging files from File Explorer, hold `Ctrl + Shift` — the auto drag popup will force the organization window to open even if automatic organization is enabled, letting you choose a different target on the fly.
+
+After setting a temporary target via the popup's **Organize Method…**, it will apply to the next two drop operations, then automatically revert to the default behavior. The current temporary method is displayed in the popup's context menu.
+
+**Permanently disable the drag popup** is available in **Settings → General Settings → Application Settings**. Before enabling, verify that the default task won't cause unintended moves, overwrites, or deletions. After enabling, if you occasionally need to use a different task or group, hold `Ctrl + Shift` while dragging files to force the organization window to appear.
+
 <!-- Screenshot: The overlay screen after all items have been successfully organized, clearly showing "Undo Last Operation" and the confirmation button with countdown. -->
-![Organization success and undo (image placeholder)](/images/en/file-organize-success-placeholder.png)
+![Organization success and undo](/images/zh/file-organize-success.png)
 
 ## FAQ
 

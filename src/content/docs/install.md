@@ -47,8 +47,8 @@ Compare the output with the hash value in the `.sha256` file to confirm a match.
 1. Double-click the downloaded `EasyTidyPro_Setup_<version>.exe` installer.
 2. Read and accept the license agreement in the setup wizard.
 3. **Choose installation path**:
-   - **Default path**: `C:\Program Files\EasyTidyPro`
-   - **Custom path**: Click "Browse" to select another directory
+  - **Default path**: `C:\Program Files\EasyTidyPro`
+  - **Custom path**: Click "Browse" to select another directory
 4. Check optional items such as "Create desktop shortcut" as needed.
 5. Click "Install" and wait for the installation to complete.
 6. Click "Finish" to exit the wizard; EasyTidy will launch automatically.
@@ -93,8 +93,8 @@ If EasyTidy Pro is currently using the system configuration, you can switch to p
 3. Find **Portable Configuration → Portable Configuration Mode** and confirm that the current mode is **System Config**.
 4. Click **Switch Mode**.
 5. Choose how the existing configuration should be handled:
-   - **Copy and Switch**: Copy the current settings, tasks, and database into the program directory before switching. Use this to keep your existing data.
-   - **Use Empty Config**: Create a new portable configuration without copying data from the system configuration.
+  - **Copy and Switch**: Copy the current settings, tasks, and database into the program directory before switching. Use this to keep your existing data.
+  - **Use Empty Config**: Create a new portable configuration without copying data from the system configuration.
 6. Wait for the application to restart, then return to the same section and confirm that the current mode is **Portable Config**.
 
 ![Switching to portable configuration mode in General Settings](/images/en/portable-config-settings.webp)
@@ -114,7 +114,7 @@ Create an empty folder named **`portable_config`** in the same directory as `Eas
 ```
 EasyTidyPro\
 ├── EasyTidyPro.exe
-└── portable_config\      ← Create this empty folder manually
+└── portable_config\   ← Create this empty folder manually
 ```
 
 Exit and restart EasyTidy Pro to use the new, empty portable configuration. Creating the directory manually does not copy your existing system configuration; use **Copy and Switch** in Settings when you need to retain existing data.

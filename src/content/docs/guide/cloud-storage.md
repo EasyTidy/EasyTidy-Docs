@@ -5,7 +5,7 @@ description: Configure WebDAV, S3-compatible storage, Baidu Netdisk, and 123 Clo
 
 EasyTidy Pro can use cloud storage as a destination or source for organization tasks, and some storage services can also be mounted as Windows drive letters. All entries are located on the **Integrations** page; once configured, choose **Cloud Storage Transfer** when creating or editing a rule.
 
-![Cloud Storage Integrations overview (image placeholder)](/images/en/cloud-storage-integrations-overview-placeholder.png)
+![Cloud Storage Integrations overview](/images/zh/cloud-storage-integrations-overview.png)
 
 ## Supported Services
 
@@ -29,7 +29,7 @@ WebDAV serves two purposes:
 
 When adding a file organization account, fill in the server URL, port, username, password, and remote path. The URL must start with `http://` or `https://`; the remote path should use a root-relative path such as `/EasyTidyPro_UploadFiles`.
 
-![WebDAV upload account configuration (image placeholder)](/images/en/cloud-storage-webdav-account-placeholder.png)
+![WebDAV upload account configuration](/images/zh/cloud-storage-webdav-account.png)
 
 Even if the same service is used for both organization uploads and app backups, it is still recommended to use different remote directories for each purpose to avoid mixing regular files with backup archives.
 
@@ -40,7 +40,7 @@ Even if the same service is used for both organization uploads and app backups, 
 3. Run a backup immediately, or enable automatic backup with a custom interval and retention limit.
 4. When restoring, the app lists available backups on the remote by time; select a version and proceed.
 
-![Selecting a WebDAV backup version (image placeholder)](/images/en/cloud-storage-webdav-restore-version-placeholder.png)
+![Selecting a WebDAV backup version](/images/zh/cloud-storage-webdav-restore-version.png)
 
 Restoring overwrites the current application data. Consider creating a local backup first, and confirm the source and timestamp of the remote backup.
 
@@ -63,7 +63,7 @@ Typical required fields:
 
 Use the S3 API endpoint, not the object storage console URL or a public download domain. It is recommended to grant credentials only the list, read, write, and delete permissions needed for the target bucket.
 
-![S3 bucket configuration (image placeholder)](/images/en/cloud-storage-s3-bucket-placeholder.png)
+![S3 bucket configuration](/images/zh/cloud-storage-s3-bucket.png)
 
 ## Baidu Netdisk
 
@@ -71,7 +71,7 @@ Baidu Netdisk integration uses Open Platform application credentials and account
 
 Authorization tokens may expire or be revoked. If authentication fails, return to the Integrations page to re-authorize before testing the task.
 
-![Baidu Netdisk authorization and path configuration (image placeholder)](/images/en/cloud-storage-baidu-authorization-placeholder.png)
+![Baidu Netdisk authorization and path configuration](/images/zh/cloud-storage-baidu-authorization.png)
 
 ## 123 Cloud
 
@@ -87,7 +87,7 @@ Configuration steps:
 4. Choose a file conflict policy and save; if you have multiple accounts, you can designate a default.
 5. Create an organization rule and select **Cloud Storage Transfer → 123 Cloud**, then pick the corresponding configuration.
 
-![123 Cloud Client ID and Client Secret configuration (image placeholder)](/images/en/cloud-storage-pan123-key-placeholder.png)
+![123 Cloud Client ID and Client Secret configuration](/images/zh/cloud-storage-pan123-key.png)
 
 When the path prefix is empty, the app uses the default directory `/EasyTidyPro_UploadFiles`. 123 Cloud currently cannot be mounted as a Windows drive letter, pending official WebDAV support.
 
@@ -101,7 +101,7 @@ Do not expose your `Client Secret` in feedback, screenshots, or logs. If a crede
 4. Optionally fill in a task-level path prefix. This path is combined with the base path from the integration configuration.
 5. After saving, test with a small number of files first to confirm the directory structure and conflict handling behave as expected.
 
-![Cloud Storage Transfer configuration in an organization rule (image placeholder)](/images/en/cloud-storage-rule-transfer-placeholder.png)
+![Cloud Storage Transfer configuration in an organization rule](/images/zh/cloud-storage-rule-transfer.png)
 
 When multiple configurations of the same type exist, the rule records the selected one; the default is used when no explicit selection is made. If a configuration referenced by a rule is deleted, you should re-edit the affected rules.
 
@@ -113,7 +113,7 @@ Each integration can set how to handle duplicate file names; when not set indivi
 
 WebDAV and S3 configurations can be mounted as Windows drive letters. On first use, the app prepares the rclone and WinFsp runtime environment; once ready, select an unused drive letter.
 
-![Cloud storage drive mount and cache status (image placeholder)](/images/en/cloud-storage-drive-mount-placeholder.png)
+![Cloud storage drive mount and cache status](/images/zh/cloud-storage-drive-mount.png)
 
 - Mounting depends on network connectivity; cloud file response times are generally lower than local disk.
 - Mounts use local caching; you can view or clear the cache on the Integrations page.

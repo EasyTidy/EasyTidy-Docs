@@ -7,7 +7,7 @@ EasyTidy Pro's settings are organized into eight sections by purpose: Language, 
 
 This page is designed to help you quickly determine "where should I go to change this." Simple options are explained directly here; features that require more parameters or involve data migration link to their detailed guides.
 
-![Settings home page (image placeholder)](/images/en/settings-overview-placeholder.png)
+![Settings home page](/images/zh/settings-overview.png)
 
 ## Application Language
 

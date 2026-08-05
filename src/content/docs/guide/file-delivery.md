@@ -36,7 +36,7 @@ The default mode is **receive only, no organization**. It is recommended to run 
 The page includes the receiving toggle, receiving directory, linked task, security notice, transfer port, upload history, and advanced options.
 
 <!-- Image requirements: Show the upper portion of "Integration Settings → File Delivery" page. Clearly display the "Enable File Reception" toggle, receiving directory, three linked task options, and security warning; the access address should use example LAN IPs (e.g., 192.168.1.20), QR codes must be regenerated with test addresses and must not contain real network information. Recommended 16:9 landscape, window width at least 1200 px. -->
-![File Delivery page overview (image placeholder)](/images/en/file-delivery-overview-placeholder.png)
+![File Delivery page overview](/images/zh/file-delivery-overview.png)
 
 ### 2. Check the Receiving Directory
 
@@ -78,7 +78,7 @@ On the sending device, do either of the following:
 You will see the **File Upload Assistant**. If the browser reports it cannot connect, do not switch to mobile data; first confirm that both devices are still on the same local network.
 
 <!-- Image requirements: Show the "File Upload Assistant" initial page in a mobile browser, clearly showing the "Select Files" and "Upload Config" buttons. The browser address bar should use an example LAN address. Screenshots must not contain real Wi-Fi names, notifications, contacts, photo thumbnails, or device identifiers. Recommended 9:19.5 portrait. -->
-![Mobile File Upload Assistant (image placeholder)](/images/en/file-delivery-mobile-home-placeholder.png)
+![Mobile File Upload Assistant](/images/zh/file-delivery-mobile-home.png)
 
 ### 5. Select and Upload Files
 
@@ -91,7 +91,7 @@ You will see the **File Upload Assistant**. If the browser reports it cannot con
 The page itself imposes no fixed limit on file count or request body size and writes to disk in a streaming fashion; the actual uploadable scale is still constrained by the sending device's browser memory, network stability, computer disk space, and file system limits. When transferring many or very large files, consider splitting into batches and keeping the browser in the foreground.
 
 <!-- Image requirements: Mobile portrait composite. Left side shows the stats card and file list with several selected test files; right side shows the upload progress view and success message. Use fictional file names like "sample_photo.jpg" and "test_document.pdf". Do not show real photo thumbnails. -->
-![File selection and upload progress (image placeholder)](/images/en/file-delivery-mobile-upload-placeholder.png)
+![File selection and upload progress](/images/zh/file-delivery-mobile-upload.png)
 
 ### 6. Confirm Results on the Computer
 
@@ -100,7 +100,7 @@ After a successful upload, files are written to the current receiving directory.
 The upload history section below the page shows file name, upload time, linked task, and "Organized" status. The list currently loads the most recent **200** records.
 
 <!-- Image requirements: Show the "Upload History" section of the File Delivery page with at least 4 fictional records, clearly visible file name, time, task, and "Organized" columns. Pro screenshot may show individual delete and "Clear History" buttons; no real file paths. Recommended 16:9 landscape or partial horizontal crop. -->
-![Upload history (image placeholder)](/images/en/file-delivery-records-placeholder.png)
+![Upload history](/images/zh/file-delivery-records.png)
 
 ## Linking an Organization Task or Workflow
 
@@ -131,7 +131,7 @@ Linked organization uses the task's own source and rules — it does not only pr
 ::::
 
 <!-- Image requirements: Left-right composite. Left shows a regular organization task editor with source explicitly set to `%MobileSync%`, fictional rules and destination; right shows the File Delivery page with "Organization Task" selected and the task dropdown expanded. Highlight the relationship "source must point to receiving directory." -->
-![Preparing and linking an organization task (image placeholder)](/images/en/file-delivery-task-link-placeholder.png)
+![Preparing and linking an organization task](/images/zh/file-delivery-task-link.png)
 
 ### Free Edition: Manual Organization
 
@@ -165,7 +165,7 @@ Compression happens in the sending device's browser and increases phone memory a
 The **Advanced Options (Pro)** section at the bottom of the desktop page currently only indicates that these settings are on the mobile upload page; it has no independent parameters. The actual upload behavior is determined by the "Upload Config" in the sending device's browser.
 
 <!-- Image requirements: Show the expanded "Upload Config" on mobile, clearly showing the default endpoint `/api/upload`, "Original / Compressed" options, and the compression quality input. Select "Compressed" to show the quality setting with the default 0.8; do not show external server addresses. -->
-![Mobile upload configuration (image placeholder)](/images/en/file-delivery-mobile-config-placeholder.png)
+![Mobile upload configuration](/images/zh/file-delivery-mobile-config.png)
 
 ## Receiving Directory, Port & Service Status
 

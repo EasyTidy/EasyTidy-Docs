@@ -16,7 +16,7 @@ Advanced workflows can include move, overwrite, delete, encrypt, external progra
 ::::
 
 <!-- Image: Show the full "File Organization → Advanced Workflows" list page, including the new workflow button, group selector with "Group Management" entry, execute group button, and the workflow table below with name, monitoring status, run status, and edit/delete/run buttons. Include 3–4 fictitious workflows in at least two groups. Use a 16:9 landscape shot at 1200 px minimum width, no real paths. -->
-![Advanced workflow list page overview (image placeholder)](/images/en/workflow-page-overview-placeholder.png)
+![Advanced workflow list page overview](/images/zh/workflow-page-overview.png)
 
 ## Quick Workflow Creation
 
@@ -32,7 +32,7 @@ On first use, start from a preset template:
 Selecting a template first resets the current editor, then fills in the template's source, conditions, and operations. If you have already manually configured content, save or export it first to avoid being overwritten by the template.
 
 <!-- Image: Show the two-column layout of the workflow editor. The left column shows expanded "Default Rules" with at least four template cards; the right column shows the pre-preview guidance state. The top menu should include Save, Save & Close, Preview Results, Run Current Task, Stop, Reset, AI Generate Rules, Share, and Import. Use a 16:9 landscape shot. -->
-![Workflow editor with preset templates (image placeholder)](/images/en/workflow-editor-overview-placeholder.png)
+![Workflow editor with preset templates](/images/zh/workflow-editor-overview.png)
 
 ## Reusing Existing Organize Tasks
 
@@ -91,7 +91,7 @@ Clicking the QR code button expands the LAN upload area, showing the access addr
 Only use in a trusted LAN, and confirm that the source directory will not be automatically deleted, transferred out, or overwritten by dangerous workflows.
 
 <!-- Image: Show a source item fully expanded. All three modes "Trigger on file change, Periodic polling, Scheduled (CRON)" should be visible, with CRON currently selected and its designer shown. The right side should have the QR code upload area alongside it, using test addresses and test directories. Annotate "CRON Recommended". -->
-![Source paths, trigger modes, and QR code upload (image placeholder)](/images/en/workflow-sources-triggers-placeholder.png)
+![Source paths, trigger modes, and QR code upload](/images/zh/workflow-sources-triggers.png)
 
 ## Setting Execution Order
 
@@ -136,7 +136,7 @@ Plain text fields support "is, is not, contains, does not contain, matches regex
 Condition groups apply to all body operations, not as independent conditions for a single step. If different operations need different filter scopes, split into multiple workflows or use post-organize ordinary tasks.
 
 <!-- Image: Show a root condition group set to "Match all conditions" with three conditions: Extension is pdf, Size is greater than 5 MB, Tag property contains "To Archive"; also nest a sub-group set to "Match any condition" with filename keyword conditions. All Add Condition, Add Condition Group, and Delete icons should be visible. Use a vertical tall image. -->
-![Conditions and nested condition groups (image placeholder)](/images/en/workflow-conditions-placeholder.png)
+![Conditions and nested condition groups](/images/zh/workflow-conditions.png)
 
 ## Adding Body Operations
 
@@ -171,7 +171,7 @@ At the bottom of each operation item you can choose:
 Failure strategies apply to body operations. Whether post-organize tasks continue after failure is determined by the independent toggle in the post-task area.
 
 <!-- Image: Show three body operation items: Move to a test archive directory, Add "Archived" tag, Create file snapshot. At least one with specific parameters should be expanded, and all four failure strategies at the bottom of each item should be clearly visible. All destination paths should use test directories. -->
-![Body operations and failure strategies (image placeholder)](/images/en/workflow-operations-placeholder.png)
+![Body operations and failure strategies](/images/zh/workflow-operations.png)
 
 ## Understanding Source-to-Operation Auto-Mapping
 
@@ -205,7 +205,7 @@ When the "continue" option is unchecked, a failed post task stops subsequent tas
 Post tasks are saved by ordinary task ID. If the corresponding ordinary task is later deleted, the editor displays an unavailable record like `Task #ID`, and execution may fail at runtime — remove or reselect it promptly.
 
 <!-- Image: Expand the "Post-Organize Tasks" area with a search keyword entered, three ordinary tasks checked and sorted as "Archive → Tag → Backup", with sort handles visible on the right. Also show the "Continue on failure" checkbox. -->
-![Post-organize task selection and sorting (image placeholder)](/images/en/workflow-post-tasks-placeholder.png)
+![Post-organize task selection and sorting](/images/zh/workflow-post-tasks.png)
 
 ## Preview, Run & Stop
 
@@ -225,7 +225,7 @@ After modifying source paths, destination paths, operation types, or conditions,
 During execution, you can click **Stop**. The stop request takes effect when the current operation checks its cancellation state; ongoing large file compression, external programs, or network operations may not end immediately.
 
 <!-- Image: Composite screenshot of the right preview area. The left tab shows 5–8 fictitious files with target paths; the right summary shows match count, operation type count, total size, and operation distribution. The "Refresh Preview" button should be visible at the top. All paths use test directories. -->
-![Workflow preview file list and summary (image placeholder)](/images/en/workflow-preview-placeholder.png)
+![Workflow preview file list and summary](/images/zh/workflow-preview.png)
 
 ## Save, Reset & Share
 
@@ -270,7 +270,7 @@ Batch runs and group runs execute selected workflows sequentially in list order.
 New workflows are added to the end of the list. The workflow list does not display database IDs; identify workflows by name and group instead.
 
 <!-- Image: Show the workflow list with multiple items selected and the batch toolbar. At least three workflows should be selected, with the "Move to Group" menu expanded. The specific group at the top and the "Execute Group" button should also be visible. Annotate that deleting a group moves workflows, not deletes them. -->
-![Workflow group and batch operations (image placeholder)](/images/en/workflow-list-management-placeholder.png)
+![Workflow group and batch operations](/images/zh/workflow-list-management.png)
 
 ## Free Tier Quotas & Pro Features
 

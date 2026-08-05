@@ -123,6 +123,17 @@ Currently available models:
 
 Models are saved by default in the `models` folder under the program directory. The download process accesses Hugging Face; on failure, the app displays a manual download URL and target path. Both the main model and marked required auxiliary files must be placed in the indicated directory.
 
+#### License Confirmation Before Download
+
+Models are provided by third parties and are not bundled with the installer. Before each download begins:
+
+1. A license agreement confirmation dialog appears.
+2. Click **View License** to open the full agreement in your browser.
+3. Check **I have read and agree to the license agreement**.
+4. Click **Continue Download** to proceed.
+
+This confirmation appears regardless of whether the download is triggered from settings or from the rule editor's in-place download. Licenses for all downloadable models are listed in **Settings → About → Third-Party Licenses**.
+
 ::::note[Relationship between Embedding and LLM]
 Embedding inference runs locally, but it does not necessarily make the entire task fully offline. Pro multi-strategy classification prioritizes local vectors; low-confidence files may still be handed off to the configured default LLM for review. When no usable Embedding is configured, model loading fails, or "Force LLM" is selected, the task falls back to LLM classification.
 ::::
@@ -138,6 +149,10 @@ Visual intelligence classification analyzes image content using local ONNX model
 | SigLIP2 Large | 1024-dim; higher accuracy, larger model |
 | SigLIP2 SO400m | 1152-dim; highest resource usage |
 
+:::::caution[DINOv3 Non-Commercial Use Only]
+When selecting the DINOv3 visual model, the confirmation window will remind you that it uses a Meta proprietary license and is limited to non-commercial use only. For commercial scenarios, please choose a different model.
+:::::
+
 ### Three Classification Modes
 
 - **Reference Template Directory**: Place sample images into subfolders by category — the subfolder names become classification labels. This mode requires Pro.
@@ -149,13 +164,15 @@ Template directory example:
 ```text
 D:\ImageTemplates\
 ├── Invoices\
-│   ├── sample-01.jpg
-│   └── sample-02.png
+│  ├── sample-01.jpg
+│  └── sample-02.png
 ├── Screenshots\
-│   └── sample-01.png
+│  └── sample-01.png
 └── Landscapes\
-    └── sample-01.jpg
+  └── sample-01.jpg
 ```
+
+The **Classification Mode** dropdown only shows modes supported by the currently selected model: **Classification Labels** only appears for models with a text tower such as SigLIP2; pure visual models (such as DINOv3) will not show this option, preventing an ineffective selection. If you switch to a model that does not support the current mode, the mode automatically falls back to **Automatic Clustering**.
 
 ### Enabling Steps
 
@@ -179,8 +196,8 @@ AI Classification first generates a file operation plan, which is then confirmed
 2. Set the source folder, basic matching rules, and target root directory.
 3. Set the operation to **AI Classification**.
 4. Choose an input method:
-   - **Natural Language Description**: Directly describe categories, handling methods, and judgment criteria.
-   - **Label Matching**: Enter multiple classification labels, confirm with Enter or comma.
+  - **Natural Language Description**: Directly describe categories, handling methods, and judgment criteria.
+  - **Label Matching**: Enter multiple classification labels, confirm with Enter or comma.
 5. If an Embedding model has been downloaded and you have the corresponding permissions, enable "Deep Semantic Understanding".
 6. Save the task and run a preview.
 7. In the AI Classification preview, review each item's classification rationale, operation type, and target path. Cancel unwanted items or directly modify suggestions.
