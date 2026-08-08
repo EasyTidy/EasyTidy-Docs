@@ -7,7 +7,7 @@ Rules tell EasyTidy Pro: **where to find files, which files to process, and what
 
 When creating rules for the first time, we recommend using a small set of test files and checking the preview results first. Once you've confirmed the source files, target location, and operation are correct, you can then apply them to real directories or automation.
 
-![New organize task window (image placeholder)](/images/zh/rules-task-editor-placeholder.png)
+![New organize task window](/images/zh/rules-task-editor.png)
 
 ## Creating an Organize Rule
 
@@ -42,7 +42,7 @@ File matching rules primarily target file names. English letter matching is case
 
 Multiple basic conditions mean "match any one of them". After entering rules, you can use the preset button next to the rule input to quickly select common combinations for documents, images, archives, etc.
 
-![File matching preset panel (image placeholder)](/images/zh/rules-pattern-picker-placeholder.png)
+![File matching preset panel](/images/zh/rules-pattern-picker.png)
 
 ### Regular Expressions
 
@@ -85,7 +85,7 @@ In the "Condition Satisfaction Mode" at the top of the rule editor, you can choo
 
 The more conditions you add, the more important it is to verify actual matched files through the preview. For the full advanced filter interface and condition descriptions, see [Filter Conditions](/guide/filter/).
 
-![Advanced filter condition satisfaction mode (image placeholder)](/images/zh/rules-filter-mode-placeholder.png)
+![Advanced filter condition satisfaction mode](/images/zh/filter-match-mode.png)
 
 ## Conditions in Advanced Workflows
 
@@ -104,7 +104,7 @@ The interface provides the following judgment methods:
 
 The judgment methods available may differ by field; refer to the current dropdown list. Relationships between multiple conditions are configured through the condition group interface — do not manually concatenate internal program names in the input value.
 
-![Advanced workflow condition judgment options (image placeholder)](/images/zh/rules-workflow-condition-placeholder.png)
+![Advanced workflow condition judgment options](/images/zh/rules-workflow-condition.png)
 
 ## Rename Templates
 
@@ -166,9 +166,9 @@ Example configuration:
 7. Place a test PDF in the Downloads directory and click <span class="fluent-icon fluent-icon--play" aria-hidden="true"></span> **Execute Once**.
 8. In the preview, confirm that only the test file is included, the operation is "Copy", and the target path is correct. Then confirm execution.
 
-![Import example rule (image placeholder)](/images/zh/rules-import-example-placeholder.png)
+![Import example rule](/images/zh/rules-import-example.png)
 
-![Example rule execution preview (image placeholder)](/images/zh/rules-example-preview-placeholder.png)
+![Example rule execution preview](/images/zh/rules-example-preview.png)
 
 ## Exporting and Sharing Your Own Rules
 

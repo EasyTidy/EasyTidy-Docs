@@ -7,7 +7,7 @@ Optional components are extension modules that EasyTidy Pro downloads and instal
 
 Go to **Settings → Optional Components** to view installation status. After clicking <span class="fluent-icon fluent-icon--download" aria-hidden="true"></span> **Download & Enable** next to a component, the app downloads the package from the official release source, verifies the ZIP format, and extracts it into the `libs` folder within the application directory.
 
-![Optional Components page showing installation status (image placeholder)](/images/en/components-overview-placeholder.png)
+![Optional Components page showing installation status](/images/zh/components-overview.png)
 
 ::::note
 Component files are loaded at application startup. If a feature still reports "not installed" after download completes, fully exit and restart EasyTidy Pro.
@@ -30,7 +30,7 @@ The Smart File Identification component is based on Google Magika. It determines
 
 Once installed, select **True File Type (Smart ID)** as a rule condition and specify categories such as images, videos, audio, or documents. It also participates in Smart Classification flows that require deep file type identification.
 
-![True File Type (Smart ID) condition in rule editor (image placeholder)](/images/en/components-magika-condition-placeholder.png)
+![True File Type (Smart ID) condition in rule editor](/images/zh/components-magika-condition.png)
 
 ::::tip
 If you select "True File Type" in the rule editor but the component is not installed yet, the page shows an inline download entry — you don't need to exit the rule editor first.
@@ -48,7 +48,7 @@ The Content Extraction component is for reading file body text rather than only 
 - Extracting text from PDF, Word, Excel, and image (OCR) files;
 - Excel export features that require document content.
 
-![Content extraction conditions and settings (image placeholder)](/images/en/components-content-extraction-placeholder.png)
+![Content extraction conditions and settings](/images/zh/components-content-extraction.png)
 
 When selecting conditions in the rule editor that require content extraction, the page offers a download prompt if the component is missing. Some batch operations also ask whether to download and enable it before running.
 
@@ -67,7 +67,7 @@ The Document Encryption component provides a **document-level password protectio
 
 When creating an organization task, select **Encrypt Files** or **Decrypt Files**, then choose the Office/PDF password protection scheme and fill in the password and output settings. If the component is not installed when using this scheme, the task editor prompts you to go to the Optional Components page.
 
-![PDF and Office document encryption task configuration (image placeholder)](/images/en/components-document-crypto-placeholder.png)
+![PDF and Office document encryption task configuration](/images/zh/components-document-crypto.png)
 
 This component is not a general-purpose encryption solution for arbitrary files, nor does it handle archive passwords; archive encryption and decryption belong to the compress/decompress feature. You must provide the correct password to remove Office or PDF password protection. For important files, it is recommended to test with sample copies first and confirm the output files open correctly before batch processing.
 
@@ -93,7 +93,7 @@ Currently supported conversion paths:
 | PDF | JPG, PNG, BMP, GIF, Markdown |
 | HTML | PDF, Markdown |
 
-![Format conversion task source and target format selection (image placeholder)](/images/en/components-format-converter-placeholder.png)
+![Format conversion task source and target format selection](/images/zh/components-format-converter.png)
 
 ::::note
 The conversion component bundles `libheif`, `libde265`, and the corresponding AOM HEIC/HEIF decoders, so additional software is typically not needed to read these images. The component includes only decoding paths; it does not include an HEVC encoder.

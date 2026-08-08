@@ -23,7 +23,7 @@ After expanding, you will see:
 - **Last Backup**: Shows the location of the most recent successful backup.
 
 <!-- Image: Full screenshot of the expanded "Settings → General Settings → Backup & Restore" card. Must clearly show Backup, Restore, Auto Backup, Backup Method, Backup Directory with the Open/Select Directory buttons on the right, Backup Interval, Maximum Retained Versions, and Last Backup. Use a horizontal screenshot; hide real usernames and private paths. -->
-![Backup & restore settings interface (image placeholder)](/images/en/backup-settings-overview-placeholder.png)
+![Backup & restore settings interface](/images/zh/backup-settings-overview.png)
 
 ## First Use: Creating a Local Backup
 
@@ -40,7 +40,7 @@ Local backup is the easiest to start with. Create one first and confirm the file
 Store the backup directory on a location other than the system drive — for example, another hard drive, a NAS sync folder, or a trusted cloud drive sync folder. Placing backups only on the system drive leaves you vulnerable to drive failure or formatting during a reinstall.
 
 <!-- Image: Show the local backup directory selection interface, highlighting the "Local" dropdown, the folder button, and the selected backup directory. Usernames in paths should be masked. -->
-![Select local backup directory (image placeholder)](/images/en/backup-local-directory-placeholder.png)
+![Select local backup directory](/images/zh/backup-local-directory.webp)
 
 ## Setting Up Auto Backup
 
@@ -74,7 +74,7 @@ Server addresses and authorization methods vary between cloud drives and NAS dev
 If you already have a WebDAV account configured for file uploads, you can optionally use the same account for application backup on the WebDAV integration page, or set up a separate account or directory specifically for backups.
 
 <!-- Image: Screenshot of the application backup account area under "Integration Settings → WebDAV", clearly showing server address, port, username, password, remote directory, Test Connection, and Save buttons. All real accounts, addresses, and passwords must use example content or be fully masked. -->
-![Configure WebDAV backup account (image placeholder)](/images/en/backup-webdav-account-placeholder.png)
+![Configure WebDAV backup account](/images/zh/backup-webdav-account.png)
 
 ### Creating a WebDAV Backup
 
@@ -104,7 +104,7 @@ Restoring replaces the current configuration with the content from the backup. B
 Do not forcefully close the app or delete backup files during the restore process. After restart, verify that important tasks, rules, paths, and auto-run settings are as expected.
 
 <!-- Image: Show the local restore file selection window with several sample EasyTidyPro_Backup_timestamp.zip files and the selected backup highlighted. Do not show real user directories or other private files. -->
-![Select local backup to restore (image placeholder)](/images/en/backup-local-restore-placeholder.png)
+![Select local backup to restore](/images/zh/backup-local-restore.webp)
 
 ## Restoring from a WebDAV Backup
 

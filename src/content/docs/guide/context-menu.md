@@ -17,7 +17,7 @@ The context menu only organizes via the default task group. If no default group 
 4. When Windows shows a User Account Control prompt, approve the operation.
 
 <!-- Image requirements: Capture the "General Settings → Application Settings → Context Menu" card, fully showing the style dropdown, Register, and Uninstall buttons. -->
-![Context menu settings (image placeholder)](/images/en/context-menu-settings-placeholder.png)
+![Context menu settings](/images/zh/context-menu-settings.png)
 
 ### Classic Menu
 
@@ -43,7 +43,7 @@ The classic menu records the current EasyTidy Pro executable location; the moder
 4. The application passes each path to the default task group, where rules automatically route them.
 
 <!-- Image requirements: Prepare separate screenshots for the Windows 11 modern context menu and the classic menu under "Show more options"; a composite placeholder image is fine for the body. The EasyTidy Pro menu entry must be clearly labeled. -->
-![Windows File Explorer context menu (image placeholder)](/images/en/context-menu-explorer-placeholder.png)
+![Windows File Explorer context menu](/images/zh/context-menu-explorer.png)
 
 The default group's execution order matches drag-and-drop organization:
 

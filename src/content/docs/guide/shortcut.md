@@ -10,7 +10,7 @@ Global shortcuts remain effective when the EasyTidy Pro main window is minimized
 Open EasyTidy Pro and go to **Settings → Shortcuts** to view and modify shortcuts.
 
 <!-- Image requirements: Capture the full shortcuts settings page, showing at least "Show Main Window," "Drop Window," "Settings Window," "Execute Tasks," "Phone Transfer," "Exit Application," and the bottom "Reset All"; hide irrelevant desktop content. -->
-![Shortcut settings page (image placeholder)](/images/en/shortcut-settings-placeholder.png)
+![Shortcut settings page](/images/zh/shortcut-settings.png)
 
 ## Default Shortcuts
 
@@ -71,7 +71,7 @@ Keeping two or more modifier keys is recommended to reduce the risk of accidenta
 4. Click <span class="fluent-icon fluent-icon--save" aria-hidden="true"></span> **Save**. The configuration is saved immediately and registration is attempted; no app restart is required.
 
 <!-- Image requirements: Capture the "Set Shortcut" dialog showing a large key preview, input hint, and the Save, Reset, Cancel buttons; use a valid key combination as an example. -->
-![Set Shortcut dialog (image placeholder)](/images/en/shortcut-edit-dialog-placeholder.png)
+![Set Shortcut dialog](/images/zh/shortcut-edit-dialog.png)
 
 ### Supported Combinations
 
@@ -95,7 +95,7 @@ When entering a shortcut, the app checks for the following:
 System‑reserved or app‑internal duplicate combinations cannot be saved normally. If a potential conflict with another program is detected, the dialog will show a warning; whether the combination ultimately works depends on the actual Windows registration result. If registration fails, a status message appears at the top of the page.
 
 <!-- Image requirements: Capture the yellow "possibly occupied" or AltGr warning in the shortcut dialog; also prepare a registration failure InfoBar at the top of the page. Both can be combined into one annotated image. -->
-![Shortcut conflict and registration status (image placeholder)](/images/en/shortcut-conflict-placeholder.png)
+![Shortcut conflict and registration status](/images/zh/shortcut-conflict.png)
 
 ::::tip[Recommendations for choosing key combinations]
 Prefer two modifier keys plus one letter, e.g. `Ctrl + Shift + K`. Avoid combinations commonly used by Windows, IMEs, screenshot tools, graphics card control panels, remote desktop, and gaming utilities as much as possible.
@@ -115,7 +115,9 @@ Right‑click the EasyTidy Pro icon in the system tray and select **Disable Glob
 
 The global enable/disable state is persisted. If you restart the app after disabling shortcuts, they will remain disabled until restored from the tray. This action does not delete the key configuration of any function.
 
-By default, when a full‑screen application is detected in the foreground, global shortcuts are temporarily suspended and automatically restored upon exiting full‑screen. This reduces accidental triggers during gaming, presentations, or video playback.
+The shortcuts settings page has a **Behavior** area with a **Disable shortcuts in full‑screen apps** toggle. When enabled, global shortcuts are temporarily suspended if a full‑screen application (such as a game or video player) is detected in the foreground, and automatically restored upon exiting full‑screen. This reduces accidental triggers during gaming, presentations, or video playback.
+
+This toggle is **off by default** because it requires continuous foreground window detection, which slightly increases idle resource usage. Only enable it when you actually encounter accidental trigger issues.
 
 For other tray menu operations, see [Using the System Tray in Automation](/guide/automation/#using-the-system-tray).
 
@@ -137,7 +139,7 @@ Non‑Pro users can use temporary undo records within the current session and a 
 
 Confirm that EasyTidy Pro is still running, and check whether the tray menu currently shows **Disable Global Shortcuts** or **Restore Shortcuts**. If it shows **Restore Shortcuts**, global shortcuts are currently turned off.
 
-Shortcuts are suspended by default when a full‑screen app is in the foreground. Try again after exiting full‑screen, or use the system tray or taskbar icon to restore the EasyTidy Pro window first.
+Shortcuts are suspended when a full‑screen app is in the foreground if the full‑screen suspension feature is enabled. Try again after exiting full‑screen, or use the system tray or taskbar icon to restore the EasyTidy Pro window first.
 
 ### After saving, it says the shortcut is occupied by another program
 

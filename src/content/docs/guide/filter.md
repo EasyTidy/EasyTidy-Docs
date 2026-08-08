@@ -11,7 +11,7 @@ Filter conditions are saved directly within the current organize task; you don't
 Filter conditions directly affect the scope of move, overwrite, delete, and other operations. After saving, always use the preview in the task editor or a manual run preview to confirm the match count meets expectations.
 ::::
 
-![Open filter conditions from the task editor (image placeholder)](/images/zh/filter-entry-placeholder.png)
+![Open filter conditions from the task editor](/images/zh/filter-entry.png)
 
 ## Adding Filter Conditions
 
@@ -32,7 +32,7 @@ The buttons at the bottom of the panel behave as follows:
 
 At least one condition must be enabled to save. The start value of a range cannot exceed the end value; content match text requires at least 2 characters.
 
-![Filter conditions panel overview (image placeholder)](/images/zh/filter-panel-overview-placeholder.png)
+![Filter conditions panel overview](/images/zh/filter-panel-overview.png)
 
 ## Condition Satisfaction Mode
 
@@ -56,7 +56,7 @@ Assume the file name rule is `*.pdf`, with "Size greater than 10 MB" and "Modifi
 When "Satisfy Any Condition" is selected, files that don't match the basic file name rule still enter the task as long as any filter condition is met. Always preview first, especially for move, delete, or upload operations.
 ::::
 
-![Four condition satisfaction modes (image placeholder)](/images/zh/filter-match-mode-placeholder.png)
+![Four condition satisfaction modes](/images/zh/filter-match-mode.png)
 
 ## File Size
 
@@ -106,7 +106,7 @@ Supports seconds, minutes, hours, days, months, and years. Months and years are 
 
 When configuring a range, enter the smaller age first, then the larger one. For example, `10` to `100` days means between 10 and 100 days ago.
 
-![Size and time filter example (image placeholder)](/images/zh/filter-size-time-placeholder.png)
+![Size and time filter example](/images/zh/filter-size-time.png)
 
 ## File Attributes
 
@@ -156,7 +156,7 @@ Content matching reads files through the "Document Content Extraction" component
 Content extraction is more time-consuming than name, size, and attribute checks. Narrow the scope with file name rules or size conditions first, rather than parsing content for every file in a large directory.
 ::::
 
-![File attributes and content matching (image placeholder)](/images/zh/filter-attributes-content-placeholder.png)
+![File attributes and content matching](/images/zh/filter-attributes-content.png)
 
 ## Visual Features
 
@@ -182,7 +182,7 @@ Unrecognizable files, non-images, or low-confidence images are not deleted due t
 Do not select "Use Filters Only" when only "Visual Features" is enabled. Visual features handle classification targets and do not act as a regular pass/reject condition. Keep a file name rule or enable at least one of size, time, attribute, or content conditions alongside it.
 ::::
 
-![Visual feature classification modes (image placeholder)](/images/zh/filter-visual-features-placeholder.png)
+![Visual feature classification modes](/images/zh/filter-visual-features.png)
 
 ## Recommended Examples
 

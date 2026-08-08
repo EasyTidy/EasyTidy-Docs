@@ -17,11 +17,11 @@ EasyTidy Pro obtains document text in the following order:
 
 ```text
 Determine whether OCR is needed
-  ├─ Not needed: Use local content extraction results
-  └─ Needed, or regular extraction failed:
-       1. MinerU cloud parsing (only when enabled and upload consented)
-       2. Local FFI OCR (Content Extraction component)
-       3. Windows OCR (final fallback)
+ ├─ Not needed: Use local content extraction results
+ └─ Needed, or regular extraction failed:
+    1. MinerU cloud parsing (only when enabled and upload consented)
+    2. Local FFI OCR (Content Extraction component)
+    3. Windows OCR (final fallback)
 ```
 
 | Tier | Runs On | Primary Use | Key Requirement |
@@ -71,7 +71,7 @@ The current MinerU page has no separate language selector. For mixed Chinese/Eng
 The Content Extraction component is installed into the `libs` folder of the current application directory. Standard installations, portable copies, and different development directories are independent of each other; re-check component status after switching instances.
 
 <!-- Image requirements: Show the "Content Extraction" card on the "Settings → Optional Components" page. Clearly display the feature description, installed status or "Download & Enable" button. Do not show real usernames in installation paths; recommended 16:9 landscape or partial horizontal crop. -->
-![Install the Content Extraction component (image placeholder)](/images/en/ocr-content-component-placeholder.png)
+![Install the Content Extraction component](/images/zh/ocr-content-component.png)
 
 ### Install Tesseract OCR
 
@@ -95,7 +95,7 @@ tesseract --list-langs
 The first command should output version information; the second should list at least the needed `chi_sim` or `eng`. If the terminal also reports "command not found," fix the installation directory and `PATH` first, then test EasyTidy Pro.
 
 <!-- Image requirements: Show a freshly opened PowerShell or Command Prompt running `tesseract --version` and `tesseract --list-langs` in sequence. Version info visible; language list at least includes `chi_sim` and `eng`. Hide username, computer name, and private directories before capturing. Recommended compact horizontal crop. -->
-![Verify Tesseract and language data (image placeholder)](/images/en/ocr-tesseract-check-placeholder.png)
+![Verify Tesseract and language data](/images/zh/ocr-tesseract-check.png)
 
 ::::note[Tesseract only affects local FFI OCR]
 Without Tesseract installed, regular digital documents can still be directly parsed by the Content Extraction component; the application may also use enabled MinerU or Windows OCR for recognition. If you want to reliably process images and scanned PDFs without uploading files, you should have the Content Extraction component, Tesseract, and the corresponding language data all in place.
@@ -118,7 +118,7 @@ MinerU is an optional preferred cloud parsing service, suitable for scanned PDFs
 Go to **Integration Settings → MinerU Integration**. The page shows the current mode, enable toggle, API Token, parsing model, service limits, and API documentation link.
 
 <!-- Image requirements: Full capture of "Integration Settings → MinerU Integration" page. Must clearly show OCR call priority, enable toggle, Token input, parsing model, current mode, Save button, and service limits; Token must be blank or fully masked — no real account info. Recommended 16:9 landscape, window width at least 1200 px. -->
-![MinerU integration settings (image placeholder)](/images/en/ocr-mineru-settings-placeholder.png)
+![MinerU integration settings](/images/zh/ocr-mineru-settings.png)
 
 ### 2. Confirm Upload Privacy
 
@@ -132,7 +132,7 @@ When toggling on **Enable MinerU**, the application shows a cloud upload confirm
 Click **Understand & Enable** to allow cloud parsing; Cancel returns MinerU to off. Checking "I understand files will be uploaded — don't show again" suppresses the confirmation on subsequent enables.
 
 <!-- Image requirements: Show the "Enable MinerU Cloud OCR?" privacy confirmation dialog. Body text, "I understand files will be uploaded — don't show again" checkbox, "Understand & Enable" and Cancel buttons all visible. Test background — no real document names, tokens, or private paths. -->
-![MinerU upload privacy confirmation (image placeholder)](/images/en/ocr-mineru-privacy-placeholder.png)
+![MinerU upload privacy confirmation](/images/zh/ocr-mineru-privacy.png)
 
 ::::caution[Local sanitization does not prevent MinerU from uploading the original file]
 The "sanitize before sending to AI" option in Structured Extraction applies to the extracted text sent to the LLM afterward — it does not modify the original document before MinerU OCR. As long as MinerU is enabled, complete files requiring OCR may be uploaded to MinerU first. Keep MinerU off for confidential, regulated, or device-bound files.
@@ -180,7 +180,7 @@ Add a **File Content** condition in a regular task or advanced workflow to filte
 Scanned images and scanned PDFs automatically enter OCR during content extraction. Some advanced condition evaluations skip files larger than 10 MB; for many large files, narrow the test scope first or pre-filter with more explicit file name, size, and type conditions.
 
 <!-- Image requirements: Show a "File Content" filter condition in a task or advanced workflow. Use test scanned PDFs with fictional match terms (e.g., "test contract number"), and make the matching mode, case sensitivity settings, and content extraction component status visible. Do not show real contracts or recognized body text. -->
-![File Content OCR filter condition (image placeholder)](/images/en/ocr-file-content-filter-placeholder.png)
+![File Content OCR filter condition](/images/zh/ocr-file-content-filter.png)
 
 ### AI Summarization
 
@@ -209,7 +209,7 @@ OCR and LLM are two different data processing stages. When MinerU is enabled, or
 Structured data extraction does not rely solely on OCR: OCR produces the text, and the default LLM then generates the structured result according to the field requirements. Without a default LLM, empty OCR/extraction content, or incorrect model return format, valid output may not be generated.
 
 <!-- Image requirements: Show an "Extract Structured Data" task configuration. Use fictional extraction fields like "Customer Name, Order Number, Amount, Signing Date," output format JSON or Excel, source and output directories using test paths; capture the sanitization option if visible. Recommended 4:3 landscape. -->
-![OCR structured data extraction task (image placeholder)](/images/en/ocr-structured-extraction-placeholder.png)
+![OCR structured data extraction task](/images/zh/ocr-structured-extraction.png)
 
 ## Verifying Recognition Results
 
@@ -232,7 +232,7 @@ Recommended sample coverage:
 - Searchable PDFs vs. pure scanned PDFs.
 
 <!-- Image requirements: Show the Running Logs for an OCR/content extraction test task. Keep only test file names, execution times, and success/fallback info; hide user directories, tokens, service response bodies, and any real document content. A composite of one success and one failure entry is fine. -->
-![OCR testing and Running Logs (image placeholder)](/images/en/ocr-run-log-placeholder.png)
+![OCR testing and Running Logs](/images/zh/ocr-run-log-placeholder.png)
 
 ## File Size, Timeouts & Fallback
 

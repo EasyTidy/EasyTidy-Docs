@@ -12,7 +12,7 @@ When entering this page, files may have already been moved from their original l
 ::::
 
 <!-- Image requirements: Show the Pending Review icon and red numeric badge in the EasyTidy Pro main window title bar, with the "Pending Review" entry in the bottom-left navigation also visible. The badge should show 3–5 fictional pending items without real file names or paths. Recommended compact landscape with arrows pointing to both entry points. -->
-![Pending Review entry and numeric badge (image placeholder)](/images/en/visual-review-entry-placeholder.png)
+![Pending Review entry and numeric badge](/images/zh/visual-review-entry-placeholder.png)
 
 ## Which Files Land in Pending Review
 
@@ -29,7 +29,7 @@ When creating a pending review record, the application attempts to move the imag
 
 ```text
 D:\Test Images\invoice-01.jpg
-        ↓
+    ↓
 D:\Test Images\PendingReview\invoice-01.jpg
 ```
 
@@ -40,7 +40,7 @@ If OCR can determine the category based on text cues like "invoice, receipt, iti
 ::::
 
 <!-- Image requirements: Left-right comparison. Left shows a test directory before auto-classification; right shows the automatically created PendingReview subdirectory after classification, with 2–3 fictional invoice/document images inside. Annotate an example showing a duplicate file with appended timestamp. No real invoices, IDs, or personal information. -->
-![PendingReview staging directory for pending files (image placeholder)](/images/en/visual-review-pending-folder-placeholder.png)
+![PendingReview staging directory for pending files](/images/zh/visual-review-pending-folder-placeholder.png)
 
 ## Opening the Pending Review Page
 
@@ -67,7 +67,7 @@ Clicking a row only determines which file is shown on the right; the checkboxes 
 ::::
 
 <!-- Image requirements: Full capture of the "Files Awaiting Your Confirmation" page. Top four buttons, pending count, left five-column list, and right large-image detail all visible; current row highlighted but unchecked, with another row checked. Use annotations: "Row selection for preview, checkboxes for batch operations." Recommended 16:9 landscape, width at least 1200 px. -->
-![Pending Review page master-detail layout (image placeholder)](/images/en/visual-review-page-overview-placeholder.png)
+![Pending Review page master-detail layout](/images/zh/visual-review-page-overview-placeholder.png)
 
 ## Understanding AI Hints
 
@@ -105,7 +105,7 @@ Upon confirmation, the application preferentially uses the current file in `Pend
 
 ```text
 D:\Test Images\PendingReview\invoice-01.jpg
-        ↓ Confirmed as "Invoices"
+    ↓ Confirmed as "Invoices"
 D:\Test Images\Invoices\invoice-01.jpg
 ```
 
@@ -114,7 +114,7 @@ The confirmation destination is inferred from the pending file's current directo
 Invalid Windows file-name characters in the category name are replaced with underscores, and trailing dots and spaces are removed. If a file with the same name already exists in the target category directory, a UTC timestamp is appended — no direct overwrite.
 
 <!-- Image requirements: Show the right detail area. Select a fictional invoice/document image; "AI Guess" is "Receipt," "Alternative" is "Invoice." Change "Classify as" to "Invoice" and highlight the "Confirm as 'Invoice'" button. Expand the recognized text section below with fictional field content. Recommended vertical crop. -->
-![Changing category and confirming a single file (image placeholder)](/images/en/visual-review-confirm-single-placeholder.png)
+![Changing category and confirming a single file](/images/zh/visual-review-confirm-single-placeholder.png)
 
 ## Batch Operations
 
@@ -149,7 +149,7 @@ After checking files and clicking **Ignore (Don't Organize)**, the application o
 If you don't want files to remain in `PendingReview`, manually move them later or run a suitable organization task again.
 
 <!-- Image requirements: Show the top action bar after checking three records in the left list. Use three-color annotations: "Confirm & Organize" processes only checked items, "Adopt All AI Suggestions" processes the entire list, "Ignore" only closes records and leaves files in place. All example files and categories use fictional data. -->
-![Pending Review batch operation differences (image placeholder)](/images/en/visual-review-batch-actions-placeholder.png)
+![Pending Review batch operation differences](/images/zh/visual-review-batch-actions-placeholder.png)
 
 ## How Manual Confirmation Affects Future Classification
 
@@ -177,7 +177,7 @@ Visual filtering itself may also accept HEIC, HEIF, and other image formats, but
 The page preferentially previews the staged file in `PendingReview`; when the staged file is unavailable, it falls back to the file path in the record.
 
 <!-- Image requirements: Left-right composite. Left shows a normal JPG large preview and OCR collapsible section. Right shows "Unable to preview" state for an HEIC or moved file, with file name, AI guess, and category input still visible. Use test images. -->
-![Previewable and non-previewable states (image placeholder)](/images/en/visual-review-preview-states-placeholder.png)
+![Previewable and non-previewable states](/images/zh/visual-review-preview-states-placeholder.png)
 
 ## Refresh & Empty State
 
@@ -201,7 +201,7 @@ Visual classification may also show a system notification "Task has files awaiti
 The "Remind Later" option in automatic task notifications is set to a temporary delay; after fully exiting the application, do not rely on that reminder state to persist.
 
 <!-- Image requirements: Show the immediate confirmation dialog: Select All, file names, operation type dropdown, editable destination path, classification reason, "Confirm & Execute Adjustments" and Cancel buttons. Add a title "Runtime immediate confirmation, not the Pending Review inbox." Use test paths. -->
-![Runtime immediate confirmation dialog (image placeholder)](/images/en/visual-review-runtime-dialog-placeholder.png)
+![Runtime immediate confirmation dialog](/images/zh/visual-review-runtime-dialog-placeholder.png)
 
 ## Safety Notes
 

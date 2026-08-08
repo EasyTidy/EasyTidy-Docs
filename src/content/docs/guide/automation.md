@@ -9,7 +9,7 @@ description: Configure file change, startup, periodic, CRON schedule, and shutdo
 This page covers only the organize task triggers on the **Automation** page. It does not cover source monitoring, polling, or schedule configurations inside the Advanced Workflow editor. Automation for advanced workflows should be configured and documented separately.
 ::::
 
-![Automation four-step configuration wizard (image placeholder)](/images/zh/automation-wizard-placeholder.png)
+![Automation four-step configuration wizard](/images/zh/automation-wizard.png)
 
 ## Before You Begin
 
@@ -105,15 +105,15 @@ Do not place the target directory inside the monitored source directory. Otherwi
 Recommended directory structure:
 
 ```text
-D:\Inbox\       # Monitored source directory
-D:\Organized\   # Target directory outside the source
+D:\Inbox\    # Monitored source directory
+D:\Organized\  # Target directory outside the source
 ```
 
 Not recommended:
 
 ```text
 D:\Inbox\
-└── Organized\  # Target still within the monitored scope
+└── Organized\ # Target still within the monitored scope
 ```
 
 ::::note[Local disks vs. network directories]
@@ -243,7 +243,7 @@ Re-entering the wizard and unchecking a previously configured task, then saving,
 
 EasyTidy Pro retains a system tray icon while running in the background. Left-clicking the icon opens the **Quick Organize flyout**; right-clicking gives access to controlling automated tasks, opening the window, or exiting the app.
 
-![EasyTidy Pro system tray menu (image placeholder)](/images/zh/tray-menu-placeholder.png)
+![EasyTidy Pro system tray menu](/images/zh/tray-menu.png)
 
 The tray menu contains the following commands:
 

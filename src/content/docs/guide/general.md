@@ -7,7 +7,7 @@ General Settings centralize the basic runtime configuration of EasyTidy Pro. Her
 
 Open EasyTidy Pro and go to **Settings → General Settings** to view the options on this page. Most settings are saved immediately; the app will prompt you for any that require a restart to take effect.
 
-![General settings page overview (image placeholder)](/images/en/general-settings-placeholder.png)
+![General settings page overview](/images/zh/general-settings.png)
 
 ## File Processing
 
@@ -44,6 +44,10 @@ Deduplication settings determine the default method for identifying and handling
 - **Default deduplication strategy**: Choose to compare files by name & size, file hash, partial hash, or binary content. Strategies marked with **PRO** require a Pro license.
 - **Default deduplication action**: Choose which file to keep or process by default when duplicates are found. Always review the preview before actual execution, especially when deletion is involved.
 
+:::note["Keep One of Them" moves deleted files to the Recycle Bin]
+Actions such as "Keep Newest / Oldest / Largest / Smallest" that keep one copy and remove the rest send the removed files to the Windows Recycle Bin rather than permanently deleting them. The default "Name + Size" comparison strategy has a potential for misidentification; removed files can be restored from the Recycle Bin. Only explicitly selecting **Permanently Delete Duplicates** bypasses the Recycle Bin.
+:::
+
 ## Application Settings
 
 ### Startup & Background Operation
@@ -66,6 +70,8 @@ EasyTidy Pro may need elevated privileges when tasks need to write to protected 
 
 It is generally recommended to choose **Use administrator privileges only when needed**. Always running as administrator may affect drag‑and‑drop from File Explorer when Explorer is running with normal privileges.
 
+When you disable **Always run as Administrator**, the app automatically restarts with normal privileges to complete the de‑elevation — no manual restart is needed twice. If the de‑elevation restart fails to launch, the UI will prompt you to manually restart as a fallback.
+
 ### Update Mirror
 
 If access to the official update source is slow, you can enable the update mirror and enter a mirror address. You can keep it disabled when the network environment is normal.
@@ -78,13 +84,13 @@ If access to the official update source is slow, you can enable the update mirro
 
 The hotkey or system tray opens a separate **Quick Organize floating window**, which remains available even after the Pro auto‑floating window is disabled. For the differences between the two entries, the floating window's right‑click menu, and complete operation of the organize window, see [Drag & Quick Organize](/guide/drag-organize/).
 
-Before enabling **Permanently disable drag & drop popup**, verify that the default task will not cause unintended moves, overwrites, or deletions.
+Before enabling **Permanently disable drag & drop popup**, verify that the default task will not cause unintended moves, overwrites, or deletions. After enabling, if you occasionally need to use a different task or group, hold `Ctrl + Shift` while dragging files to force the organization window open — see [Temporarily Choose Organization Method](/guide/drag-organize/#temporarily-choose-organization-method).
 
 ### Context Menu
 
 You can register EasyTidy Pro in the Windows file right‑click menu and choose between classic or new menu styles. Right‑click organizing does not open the task selection window; instead, it silently processes files using the default task group. For installation methods, default group requirements, and troubleshooting, see [Windows Context Menu](/guide/context-menu/).
 
-![Application settings and context menu (image placeholder)](/images/en/general-settings-placeholder.png)
+![Application settings and context menu](/images/zh/general-settings.png)
 
 ## Backup & Restore
 
@@ -113,7 +119,7 @@ Tag Sync allows synchronizing file tags across multiple devices via cloud storag
 
 It is advisable to create a backup before the first sync and confirm that the conflict strategy matches your expectations.
 
-![Tag sync settings (image placeholder)](/images/en/general-settings-placeholder.png)
+![Tag sync settings](/images/zh/general-settings.png)
 
 ## Undo Settings
 
@@ -146,4 +152,4 @@ The switch completes during an application restart. To ensure database integrity
 
 Portable mode requires the program directory to remain continuously writable. It is not recommended for directories restricted by enterprise policies, and do not manually move or delete the portable configuration directory while the application is running.
 
-![Portable configuration switch dialog (image placeholder)](/images/en/general-settings-placeholder.png)
+![Portable configuration switch dialog](/images/zh/general-settings.png)
