@@ -35,7 +35,7 @@ description: EasyTidy Pro 安装、便携模式配置与卸载的完整指引。
 下载完成后，可校验文件完整性。在 GitHub Releases 页面找到对应的 `.sha256` 校验文件，使用 PowerShell 验证：
 
 ```powershell
-Get-FileHash .\EasyTidy_Setup_<版本>.exe -Algorithm SHA256
+Get-FileHash .\EasyTidyPro_win-x64_Setup.exe -Algorithm SHA256
 ```
 
 将输出的哈希值与 `.sha256` 文件内容比对，确保一致。
@@ -44,7 +44,7 @@ Get-FileHash .\EasyTidy_Setup_<版本>.exe -Algorithm SHA256
 
 ### 安装步骤
 
-1. 双击下载的 `EasyTidyPro_Setup_<版本>.exe` 安装程序。
+1. 双击下载的 `EasyTidyPro_win-x64_Setup.exe` 安装程序。
 2. 在安装向导中阅读并同意许可协议。
 3. **选择安装路径**：
    - **默认路径**：`C:\Program Files\EasyTidyPro`

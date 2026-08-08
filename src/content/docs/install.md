@@ -35,7 +35,7 @@ Always download from the following trusted sources to ensure file integrity:
 After downloading, you can verify file integrity using the `.sha256` checksum file available on the GitHub Releases page. Run the following in PowerShell:
 
 ```powershell
-Get-FileHash .\EasyTidy_Setup_<version>.exe -Algorithm SHA256
+Get-FileHash .\EasyTidyPro_win-x64_Setup.exe -Algorithm SHA256
 ```
 
 Compare the output with the hash value in the `.sha256` file to confirm a match.
@@ -44,7 +44,7 @@ Compare the output with the hash value in the `.sha256` file to confirm a match.
 
 ### Installation Steps
 
-1. Double-click the downloaded `EasyTidyPro_Setup_<version>.exe` installer.
+1. Double-click the downloaded `EasyTidyPro_win-x64_Setup.exe` installer.
 2. Read and accept the license agreement in the setup wizard.
 3. **Choose installation path**:
   - **Default path**: `C:\Program Files\EasyTidyPro`
