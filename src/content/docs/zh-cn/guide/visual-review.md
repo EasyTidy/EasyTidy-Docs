@@ -12,7 +12,7 @@ description: 检查 AI 自动视觉分类中拿不准的图片，确认分类或
 :::
 
 <!-- 图片要求：展示 EasyTidy Pro 主窗口顶部标题栏的待确认图标和红色数字角标，同时让左侧底部导航中的“待确认”入口可见。角标使用 3～5 个虚构待确认项，不显示真实文件名或路径。建议使用紧凑横图，并用箭头标注两个入口。 -->
-![待确认入口与数字角标（图片占位）](/images/zh/visual-review-entry-placeholder.png)
+![待确认入口与数字角标](/images/zh/visual-review-entry.png)
 
 ## 哪些文件会进入待确认
 
@@ -40,7 +40,7 @@ D:\测试图片\PendingReview\invoice-01.jpg
 :::
 
 <!-- 图片要求：左右对比图。左侧为自动分类前的测试目录，右侧为分类后自动创建的 PendingReview 子目录，里面放入 2～3 张虚构票据/文档图片；标注同名文件被追加时间戳的示例。不得使用真实发票、证件或个人信息。 -->
-![待确认文件的 PendingReview 暂存目录（图片占位）](/images/zh/visual-review-pending-folder-placeholder.png)
+![待确认文件的 PendingReview 暂存目录](/images/zh/visual-review-pending-folder.png)
 
 ## 打开待确认页面
 
@@ -67,7 +67,7 @@ D:\测试图片\PendingReview\invoice-01.jpg
 :::
 
 <!-- 图片要求：完整展示“待你确认的整理”页面。顶部四个按钮、待确认数量、左侧五列列表和右侧大图详情都要可见；当前行高亮但不勾选，再勾选另一行，用标注说明“行选中用于预览，复选框用于批量操作”。建议 16:9 横图，宽度至少 1200 px。 -->
-![待确认页面主从布局（图片占位）](/images/zh/visual-review-page-overview-placeholder.png)
+![待确认页面主从布局](/images/zh/visual-review-page-overview.png)
 
 ## 理解 AI 提示
 
@@ -114,7 +114,7 @@ D:\测试图片\发票\invoice-01.jpg
 分类名称中的 Windows 非法文件名字符会替换为下划线，并移除末尾的点和空格。目标分类目录已有同名文件时，同样会追加 UTC 时间戳，不会直接覆盖。
 
 <!-- 图片要求：展示右侧详情区。选择一张虚构票据图片，“AI 猜测”为“收据”，“另一种可能”为“发票”，把“归到这一类”改为“发票”，并突出“确认归到「发票」”按钮；下方展开识别到的文字，内容使用虚构字段。建议竖向截图。 -->
-![修改分类并确认单个文件（图片占位）](/images/zh/visual-review-confirm-single-placeholder.png)
+![修改分类并确认单个文件](/images/zh/visual-review-confirm-single.png)
 
 ## 批量操作
 
@@ -149,7 +149,7 @@ D:\测试图片\发票\invoice-01.jpg
 如果不希望文件继续留在 `PendingReview`，需要之后手动移动，或重新运行适合的整理任务。
 
 <!-- 图片要求：展示左侧勾选三条记录后的顶部操作区，并用三色标注说明：“确认并整理”只处理勾选项、“全部采纳 AI 建议”处理整个列表、“忽略”只关闭记录且文件留在当前目录。示例文件和分类均使用虚构数据。 -->
-![待确认批量操作区别（图片占位）](/images/zh/visual-review-batch-actions-placeholder.png)
+![待确认批量操作区别](/images/zh/visual-review-batch-actions.png)
 
 ## 人工确认如何影响后续分类
 
@@ -177,7 +177,7 @@ D:\测试图片\发票\invoice-01.jpg
 页面优先预览 `PendingReview` 中的暂存文件；暂存文件不存在时才回退到记录中的文件路径。
 
 <!-- 图片要求：左右组合图。左侧展示正常 JPG 大图预览和 OCR 折叠区；右侧展示一个 HEIC 或已移动文件的“无法预览”状态，同时保留文件名、AI 猜测和分类输入框。使用测试图片。 -->
-![可预览与无法预览状态（图片占位）](/images/zh/visual-review-preview-states-placeholder.png)
+![可预览与无法预览状态](/images/zh/visual-review-preview-states.png)
 
 ## 刷新与空状态
 
@@ -201,7 +201,7 @@ D:\测试图片\发票\invoice-01.jpg
 自动任务通知中的“稍后提醒”当前设置为一段临时延迟；彻底退出应用后，不应依赖该提醒状态继续保留。
 
 <!-- 图片要求：展示即时确认对话框，包含全选、文件名、操作类型下拉、可编辑目标路径、分类理由、“确认并执行调整”和取消按钮；旁边添加标题“运行时即时确认，不是待确认收件箱”。使用测试路径。 -->
-![运行时即时确认对话框（图片占位）](/images/zh/visual-review-runtime-dialog-placeholder.png)
+![运行时即时确认对话框](/images/zh/visual-review-runtime-dialog.png)
 
 ## 安全注意事项
 
